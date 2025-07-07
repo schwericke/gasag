@@ -1,0 +1,1794 @@
+[0m12:50:34.824139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7966e618bee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7966e5001630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7966e50015d0>]}
+
+
+============================== 12:50:34.827622 | 64fcd8d6-b76a-4fb3-a870-eec902e4c12a ==============================
+[0m12:50:34.827622 [info ] [MainThread]: Running with dbt=1.10.3
+[0m12:50:34.828572 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anton/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/home/anton/code/gasag/dbt_gasag/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:50:34.840760 [info ] [MainThread]: dbt version: 1.10.3
+[0m12:50:34.841461 [info ] [MainThread]: python version: 3.10.12
+[0m12:50:34.842053 [info ] [MainThread]: python path: /usr/bin/python3
+[0m12:50:34.842727 [info ] [MainThread]: os info: Linux-6.8.0-60-generic-x86_64-with-glibc2.35
+[0m12:50:34.846723 [info ] [MainThread]: Using profiles dir at /home/anton/.dbt
+[0m12:50:34.847916 [info ] [MainThread]: Using profiles.yml file at /home/anton/.dbt/profiles.yml
+[0m12:50:34.848573 [info ] [MainThread]: Using dbt_project.yml file at /home/anton/code/gasag/dbt_gasag/dbt_project.yml
+[0m12:50:35.089907 [info ] [MainThread]: Configuration:
+[0m12:50:35.090779 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m12:50:35.091363 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:50:35.091934 [info ] [MainThread]: Required dependencies:
+[0m12:50:35.092517 [debug] [MainThread]: Executing "git --help"
+[0m12:50:35.100094 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:50:35.101491 [debug] [MainThread]: STDERR: "b''"
+[0m12:50:35.102511 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:50:35.103844 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m12:50:35.105085 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:50:35.106302 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'gasag'
+
+
+[0m12:50:35.108619 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.40248665, "process_in_blocks": "960", "process_kernel_time": 0.14206, "process_mem_max_rss": "102840", "process_out_blocks": "16", "process_user_time": 2.52308}
+[0m12:50:35.110342 [debug] [MainThread]: Command `dbt debug` failed at 12:50:35.110067 after 0.40 seconds
+[0m12:50:35.111259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7966e618bee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7966e6131180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7966e60d70a0>]}
+[0m12:50:35.112358 [debug] [MainThread]: Flushing usage events
+[0m12:50:35.753491 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:51:43.496292 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7886ebf8be20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7886eadfef20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7886eadfef80>]}
+
+
+============================== 12:51:43.500502 | 91112ca8-44e1-4311-baa2-a4258e9b99c8 ==============================
+[0m12:51:43.500502 [info ] [MainThread]: Running with dbt=1.10.3
+[0m12:51:43.502223 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anton/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/home/anton/code/gasag/dbt_gasag/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:51:43.513122 [info ] [MainThread]: dbt version: 1.10.3
+[0m12:51:43.513871 [info ] [MainThread]: python version: 3.10.12
+[0m12:51:43.514461 [info ] [MainThread]: python path: /usr/bin/python3
+[0m12:51:43.515446 [info ] [MainThread]: os info: Linux-6.8.0-60-generic-x86_64-with-glibc2.35
+[0m12:51:43.520250 [info ] [MainThread]: Using profiles dir at /home/anton/.dbt
+[0m12:51:43.521065 [info ] [MainThread]: Using profiles.yml file at /home/anton/.dbt/profiles.yml
+[0m12:51:43.521740 [info ] [MainThread]: Using dbt_project.yml file at /home/anton/code/gasag/dbt_gasag/dbt_project.yml
+[0m12:51:43.769575 [info ] [MainThread]: Configuration:
+[0m12:51:43.770306 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m12:51:43.771048 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:51:43.771635 [info ] [MainThread]: Required dependencies:
+[0m12:51:43.772224 [debug] [MainThread]: Executing "git --help"
+[0m12:51:43.779417 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:51:43.780213 [debug] [MainThread]: STDERR: "b''"
+[0m12:51:43.781011 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:51:43.781899 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m12:51:43.782871 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:51:43.783479 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'gasag'
+
+
+[0m12:51:43.785073 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.41520903, "process_in_blocks": "0", "process_kernel_time": 0.163874, "process_mem_max_rss": "102800", "process_out_blocks": "16", "process_user_time": 2.587021}
+[0m12:51:43.786595 [debug] [MainThread]: Command `dbt debug` failed at 12:51:43.786356 after 0.42 seconds
+[0m12:51:43.787306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7886ebf8be20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7886eace3eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7886eadfefe0>]}
+[0m12:51:43.788040 [debug] [MainThread]: Flushing usage events
+[0m12:51:44.530034 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:52:43.139092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77591295be80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7759117ceec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7759117cef20>]}
+
+
+============================== 12:52:43.144741 | a49980ed-3b8b-41af-93d9-1180f4ce7356 ==============================
+[0m12:52:43.144741 [info ] [MainThread]: Running with dbt=1.10.3
+[0m12:52:43.146078 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/anton/code/gasag/dbt_gasag/logs', 'profiles_dir': '/home/anton/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:52:43.157407 [info ] [MainThread]: dbt version: 1.10.3
+[0m12:52:43.158239 [info ] [MainThread]: python version: 3.10.12
+[0m12:52:43.159097 [info ] [MainThread]: python path: /usr/bin/python3
+[0m12:52:43.159868 [info ] [MainThread]: os info: Linux-6.8.0-60-generic-x86_64-with-glibc2.35
+[0m12:52:43.165227 [info ] [MainThread]: Using profiles dir at /home/anton/.dbt
+[0m12:52:43.166019 [info ] [MainThread]: Using profiles.yml file at /home/anton/.dbt/profiles.yml
+[0m12:52:43.166663 [info ] [MainThread]: Using dbt_project.yml file at /home/anton/code/gasag/dbt_gasag/dbt_project.yml
+[0m12:52:43.405836 [info ] [MainThread]: Configuration:
+[0m12:52:43.406605 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m12:52:43.407225 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:52:43.407881 [info ] [MainThread]: Required dependencies:
+[0m12:52:43.408841 [debug] [MainThread]: Executing "git --help"
+[0m12:52:43.416933 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:52:43.418464 [debug] [MainThread]: STDERR: "b''"
+[0m12:52:43.419465 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:52:43.420489 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m12:52:43.421513 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:52:43.422517 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'gasag'
+
+
+[0m12:52:43.424249 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.41427115, "process_in_blocks": "0", "process_kernel_time": 0.146068, "process_mem_max_rss": "102792", "process_out_blocks": "24", "process_user_time": 2.576209}
+[0m12:52:43.425120 [debug] [MainThread]: Command `dbt debug` failed at 12:52:43.424975 after 0.42 seconds
+[0m12:52:43.426206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77591295be80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7759128d61d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7759121ea830>]}
+[0m12:52:43.427514 [debug] [MainThread]: Flushing usage events
+[0m12:52:44.048745 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:53:30.892067 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x750dea473e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x750de92e95a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x750de92e9540>]}
+
+
+============================== 12:53:30.895190 | 3bec6b24-5fcc-49c0-a7e6-dbb5ea48922d ==============================
+[0m12:53:30.895190 [info ] [MainThread]: Running with dbt=1.10.3
+[0m12:53:30.896055 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anton/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/home/anton/code/gasag/dbt_gasag/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:53:30.904864 [info ] [MainThread]: dbt version: 1.10.3
+[0m12:53:30.905477 [info ] [MainThread]: python version: 3.10.12
+[0m12:53:30.906003 [info ] [MainThread]: python path: /usr/bin/python3
+[0m12:53:30.906541 [info ] [MainThread]: os info: Linux-6.8.0-60-generic-x86_64-with-glibc2.35
+[0m12:53:30.910234 [info ] [MainThread]: Using profiles dir at /home/anton/.dbt
+[0m12:53:30.910920 [info ] [MainThread]: Using profiles.yml file at /home/anton/.dbt/profiles.yml
+[0m12:53:30.911656 [info ] [MainThread]: Using dbt_project.yml file at /home/anton/code/gasag/dbt_gasag/dbt_project.yml
+[0m12:53:31.103638 [info ] [MainThread]: Configuration:
+[0m12:53:31.104270 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m12:53:31.104784 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:53:31.105272 [info ] [MainThread]: Required dependencies:
+[0m12:53:31.105792 [debug] [MainThread]: Executing "git --help"
+[0m12:53:31.111918 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:53:31.112636 [debug] [MainThread]: STDERR: "b''"
+[0m12:53:31.113194 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:53:31.113807 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m12:53:31.114380 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:53:31.115044 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'gasag'
+
+
+[0m12:53:31.116772 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.32195553, "process_in_blocks": "0", "process_kernel_time": 0.151999, "process_mem_max_rss": "103044", "process_out_blocks": "16", "process_user_time": 2.165993}
+[0m12:53:31.117733 [debug] [MainThread]: Command `dbt debug` failed at 12:53:31.117580 after 0.32 seconds
+[0m12:53:31.118361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x750dea473e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x750de92e94e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x750dea3f1fc0>]}
+[0m12:53:31.119342 [debug] [MainThread]: Flushing usage events
+[0m12:53:31.811248 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:54:05.860426 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7732db74beb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7732da599600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7732da5995a0>]}
+
+
+============================== 12:54:05.863984 | 38a0500e-c643-4e33-9b75-dab8deae555f ==============================
+[0m12:54:05.863984 [info ] [MainThread]: Running with dbt=1.10.3
+[0m12:54:05.864990 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anton/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/anton/code/gasag/dbt_gasag/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:54:05.875371 [info ] [MainThread]: dbt version: 1.10.3
+[0m12:54:05.876135 [info ] [MainThread]: python version: 3.10.12
+[0m12:54:05.876788 [info ] [MainThread]: python path: /usr/bin/python3
+[0m12:54:05.877415 [info ] [MainThread]: os info: Linux-6.8.0-60-generic-x86_64-with-glibc2.35
+[0m12:54:08.466208 [info ] [MainThread]: Using profiles dir at /home/anton/.dbt
+[0m12:54:08.466928 [info ] [MainThread]: Using profiles.yml file at /home/anton/.dbt/profiles.yml
+[0m12:54:08.467476 [info ] [MainThread]: Using dbt_project.yml file at /home/anton/code/gasag/dbt_gasag/dbt_project.yml
+[0m12:54:08.468054 [info ] [MainThread]: adapter type: bigquery
+[0m12:54:08.468595 [info ] [MainThread]: adapter version: 1.9.2
+[0m12:54:08.675188 [info ] [MainThread]: Configuration:
+[0m12:54:08.675928 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:54:08.676504 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:54:08.677201 [info ] [MainThread]: Required dependencies:
+[0m12:54:08.678047 [debug] [MainThread]: Executing "git --help"
+[0m12:54:08.685130 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:54:08.686740 [debug] [MainThread]: STDERR: "b''"
+[0m12:54:08.687856 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:54:08.689014 [info ] [MainThread]: Connection:
+[0m12:54:08.690156 [info ] [MainThread]:   method: oauth
+[0m12:54:08.691259 [info ] [MainThread]:   database: gasag-465208
+[0m12:54:08.692347 [info ] [MainThread]:   execution_project: gasag-465208
+[0m12:54:08.693526 [info ] [MainThread]:   schema: raw
+[0m12:54:08.694648 [info ] [MainThread]:   location: EU
+[0m12:54:08.695863 [info ] [MainThread]:   priority: None
+[0m12:54:08.696967 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m12:54:08.698058 [info ] [MainThread]:   impersonate_service_account: None
+[0m12:54:08.699118 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m12:54:08.700253 [info ] [MainThread]:   job_retries: 1
+[0m12:54:08.701378 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m12:54:08.702496 [info ] [MainThread]:   job_execution_timeout_seconds: None
+[0m12:54:08.703527 [info ] [MainThread]:   timeout_seconds: None
+[0m12:54:08.704696 [info ] [MainThread]:   client_id: None
+[0m12:54:08.706152 [info ] [MainThread]:   token_uri: None
+[0m12:54:08.707824 [info ] [MainThread]:   compute_region: None
+[0m12:54:08.709048 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m12:54:08.710233 [info ] [MainThread]:   gcs_bucket: None
+[0m12:54:08.711423 [info ] [MainThread]:   dataproc_batch: None
+[0m12:54:08.712937 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m12:54:09.026518 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m12:54:09.027374 [debug] [MainThread]: On debug: select 1 as id
+[0m12:54:09.028014 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:54:09.921526 [error] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gasag-465208&j=bq:EU:969a9cac-cb65-4623-9066-a5ed0ec5eeac&page=queryresults
+[0m12:54:09.924164 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m12:54:09.925548 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:54:09.927363 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Access Denied: Project gasag-465208: User does not have bigquery.jobs.create permission in project gasag-465208.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m12:54:09.931161 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 4.209937, "process_in_blocks": "88", "process_kernel_time": 0.413736, "process_mem_max_rss": "351652", "process_out_blocks": "24", "process_user_time": 5.631804}
+[0m12:54:09.932948 [debug] [MainThread]: Command `dbt debug` failed at 12:54:09.932713 after 4.21 seconds
+[0m12:54:09.933784 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:54:09.935233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7732db74beb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7732b0a64940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7732b0a65960>]}
+[0m12:54:09.936133 [debug] [MainThread]: Flushing usage events
+[0m12:54:10.512236 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:56:17.760650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738b99f8be20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738b98dfef20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738b98dfef80>]}
+
+
+============================== 12:56:17.765128 | b2d52080-d8eb-46e3-99e1-931a598da332 ==============================
+[0m12:56:17.765128 [info ] [MainThread]: Running with dbt=1.10.3
+[0m12:56:17.766088 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/anton/.dbt', 'log_path': '/home/anton/code/gasag/dbt_gasag/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:56:17.778054 [info ] [MainThread]: dbt version: 1.10.3
+[0m12:56:17.779362 [info ] [MainThread]: python version: 3.10.12
+[0m12:56:17.780150 [info ] [MainThread]: python path: /usr/bin/python3
+[0m12:56:17.780928 [info ] [MainThread]: os info: Linux-6.8.0-60-generic-x86_64-with-glibc2.35
+[0m12:56:20.832544 [info ] [MainThread]: Using profiles dir at /home/anton/.dbt
+[0m12:56:20.833287 [info ] [MainThread]: Using profiles.yml file at /home/anton/.dbt/profiles.yml
+[0m12:56:20.833874 [info ] [MainThread]: Using dbt_project.yml file at /home/anton/code/gasag/dbt_gasag/dbt_project.yml
+[0m12:56:20.834463 [info ] [MainThread]: adapter type: bigquery
+[0m12:56:20.835031 [info ] [MainThread]: adapter version: 1.9.2
+[0m12:56:21.116920 [info ] [MainThread]: Configuration:
+[0m12:56:21.117661 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:56:21.118239 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:56:21.118828 [info ] [MainThread]: Required dependencies:
+[0m12:56:21.119425 [debug] [MainThread]: Executing "git --help"
+[0m12:56:21.127717 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:56:21.128918 [debug] [MainThread]: STDERR: "b''"
+[0m12:56:21.129817 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:56:21.130607 [info ] [MainThread]: Connection:
+[0m12:56:21.131360 [info ] [MainThread]:   method: oauth
+[0m12:56:21.132094 [info ] [MainThread]:   database: gasag-465208
+[0m12:56:21.132982 [info ] [MainThread]:   execution_project: gasag-465208
+[0m12:56:21.134056 [info ] [MainThread]:   schema: raw
+[0m12:56:21.135299 [info ] [MainThread]:   location: EU
+[0m12:56:21.136084 [info ] [MainThread]:   priority: None
+[0m12:56:21.136808 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m12:56:21.137520 [info ] [MainThread]:   impersonate_service_account: None
+[0m12:56:21.138345 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m12:56:21.139048 [info ] [MainThread]:   job_retries: 1
+[0m12:56:21.139842 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m12:56:21.141263 [info ] [MainThread]:   job_execution_timeout_seconds: None
+[0m12:56:21.142167 [info ] [MainThread]:   timeout_seconds: None
+[0m12:56:21.143284 [info ] [MainThread]:   client_id: None
+[0m12:56:21.144567 [info ] [MainThread]:   token_uri: None
+[0m12:56:21.145828 [info ] [MainThread]:   compute_region: None
+[0m12:56:21.146701 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m12:56:21.147544 [info ] [MainThread]:   gcs_bucket: None
+[0m12:56:21.148263 [info ] [MainThread]:   dataproc_batch: None
+[0m12:56:21.149194 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m12:56:21.465087 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m12:56:21.465763 [debug] [MainThread]: On debug: select 1 as id
+[0m12:56:21.466329 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:56:22.655024 [error] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gasag-465208&j=bq:EU:d5c4dfc7-c589-41a9-912c-1a027e2982d8&page=queryresults
+[0m12:56:22.657860 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m12:56:22.659366 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:56:22.661526 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Access Denied: Project gasag-465208: User does not have bigquery.jobs.create permission in project gasag-465208.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m12:56:22.664166 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 5.0261393, "process_in_blocks": "0", "process_kernel_time": 0.464854, "process_mem_max_rss": "351536", "process_out_blocks": "32", "process_user_time": 6.577794}
+[0m12:56:22.665689 [debug] [MainThread]: Command `dbt debug` failed at 12:56:22.665409 after 5.03 seconds
+[0m12:56:22.666645 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:56:22.667695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738b99f8be20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738b6f28cf10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738b6f240b50>]}
+[0m12:56:22.669317 [debug] [MainThread]: Flushing usage events
+[0m12:56:23.351599 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:56:52.746863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7de441273e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7de4400e6ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7de4400e6f20>]}
+
+
+============================== 12:56:52.750873 | d8781f67-c9b9-46fe-8b1f-2650bb7cde7e ==============================
+[0m12:56:52.750873 [info ] [MainThread]: Running with dbt=1.10.3
+[0m12:56:52.752599 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/anton/code/gasag/dbt_gasag/logs', 'debug': 'False', 'profiles_dir': '/home/anton/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:56:52.763295 [info ] [MainThread]: dbt version: 1.10.3
+[0m12:56:52.764358 [info ] [MainThread]: python version: 3.10.12
+[0m12:56:52.765087 [info ] [MainThread]: python path: /usr/bin/python3
+[0m12:56:52.765754 [info ] [MainThread]: os info: Linux-6.8.0-60-generic-x86_64-with-glibc2.35
+[0m12:56:55.963074 [info ] [MainThread]: Using profiles dir at /home/anton/.dbt
+[0m12:56:55.964210 [info ] [MainThread]: Using profiles.yml file at /home/anton/.dbt/profiles.yml
+[0m12:56:55.964896 [info ] [MainThread]: Using dbt_project.yml file at /home/anton/code/gasag/dbt_gasag/dbt_project.yml
+[0m12:56:55.966172 [info ] [MainThread]: adapter type: bigquery
+[0m12:56:55.967298 [info ] [MainThread]: adapter version: 1.9.2
+[0m12:56:56.205684 [info ] [MainThread]: Configuration:
+[0m12:56:56.206984 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:56:56.208106 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:56:56.208722 [info ] [MainThread]: Required dependencies:
+[0m12:56:56.209318 [debug] [MainThread]: Executing "git --help"
+[0m12:56:56.217363 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:56:56.218238 [debug] [MainThread]: STDERR: "b''"
+[0m12:56:56.218841 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:56:56.219499 [info ] [MainThread]: Connection:
+[0m12:56:56.220192 [info ] [MainThread]:   method: oauth
+[0m12:56:56.220798 [info ] [MainThread]:   database: gasag-465208
+[0m12:56:56.221420 [info ] [MainThread]:   execution_project: gasag-465208
+[0m12:56:56.222108 [info ] [MainThread]:   schema: raw
+[0m12:56:56.222722 [info ] [MainThread]:   location: EU
+[0m12:56:56.223298 [info ] [MainThread]:   priority: None
+[0m12:56:56.223914 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m12:56:56.224595 [info ] [MainThread]:   impersonate_service_account: None
+[0m12:56:56.225170 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m12:56:56.225741 [info ] [MainThread]:   job_retries: 1
+[0m12:56:56.226297 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m12:56:56.227070 [info ] [MainThread]:   job_execution_timeout_seconds: None
+[0m12:56:56.227660 [info ] [MainThread]:   timeout_seconds: None
+[0m12:56:56.228218 [info ] [MainThread]:   client_id: None
+[0m12:56:56.228890 [info ] [MainThread]:   token_uri: None
+[0m12:56:56.230115 [info ] [MainThread]:   compute_region: None
+[0m12:56:56.230832 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m12:56:56.231597 [info ] [MainThread]:   gcs_bucket: None
+[0m12:56:56.232728 [info ] [MainThread]:   dataproc_batch: None
+[0m12:56:56.234474 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m12:56:56.530800 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m12:56:56.531502 [debug] [MainThread]: On debug: select 1 as id
+[0m12:56:56.533037 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:56:57.535415 [error] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gasag-465208&j=bq:EU:c803b910-80d3-46a5-9b7a-a62a2ff49c21&page=queryresults
+[0m12:56:57.536931 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m12:56:57.537633 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:56:57.538577 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Access Denied: Project gasag-465208: User does not have bigquery.jobs.create permission in project gasag-465208.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m12:56:57.539961 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 4.9204307, "process_in_blocks": "0", "process_kernel_time": 0.44681, "process_mem_max_rss": "351648", "process_out_blocks": "24", "process_user_time": 6.52762}
+[0m12:56:57.540861 [debug] [MainThread]: Command `dbt debug` failed at 12:56:57.540714 after 4.92 seconds
+[0m12:56:57.541477 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:56:57.542239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7de441273e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7de41651d960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7de416569780>]}
+[0m12:56:57.542937 [debug] [MainThread]: Flushing usage events
+[0m12:56:58.150826 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:57:34.291922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c5262e47eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c5261c95600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c5261c955a0>]}
+
+
+============================== 12:57:34.295260 | f8ec3081-abc0-4bf9-b0cc-0a20e9f47d77 ==============================
+[0m12:57:34.295260 [info ] [MainThread]: Running with dbt=1.10.3
+[0m12:57:34.296263 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/anton/code/gasag/dbt_gasag/logs', 'profiles_dir': '/home/anton/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m12:57:34.308513 [info ] [MainThread]: dbt version: 1.10.3
+[0m12:57:34.309204 [info ] [MainThread]: python version: 3.10.12
+[0m12:57:34.309769 [info ] [MainThread]: python path: /usr/bin/python3
+[0m12:57:34.310312 [info ] [MainThread]: os info: Linux-6.8.0-60-generic-x86_64-with-glibc2.35
+[0m12:57:37.435910 [info ] [MainThread]: Using profiles dir at /home/anton/.dbt
+[0m12:57:37.437394 [info ] [MainThread]: Using profiles.yml file at /home/anton/.dbt/profiles.yml
+[0m12:57:37.438397 [info ] [MainThread]: Using dbt_project.yml file at /home/anton/code/gasag/dbt_gasag/dbt_project.yml
+[0m12:57:37.439200 [info ] [MainThread]: adapter type: bigquery
+[0m12:57:37.439842 [info ] [MainThread]: adapter version: 1.9.2
+[0m12:57:37.662713 [info ] [MainThread]: Configuration:
+[0m12:57:37.663452 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:57:37.664118 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:57:37.664770 [info ] [MainThread]: Required dependencies:
+[0m12:57:37.665438 [debug] [MainThread]: Executing "git --help"
+[0m12:57:37.673260 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:57:37.674019 [debug] [MainThread]: STDERR: "b''"
+[0m12:57:37.674606 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:57:37.675471 [info ] [MainThread]: Connection:
+[0m12:57:37.676504 [info ] [MainThread]:   method: oauth
+[0m12:57:37.677947 [info ] [MainThread]:   database: gasag-465208
+[0m12:57:37.679255 [info ] [MainThread]:   execution_project: gasag-465208
+[0m12:57:37.679961 [info ] [MainThread]:   schema: raw
+[0m12:57:37.680801 [info ] [MainThread]:   location: EU
+[0m12:57:37.681438 [info ] [MainThread]:   priority: None
+[0m12:57:37.682278 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m12:57:37.683556 [info ] [MainThread]:   impersonate_service_account: None
+[0m12:57:37.684293 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m12:57:37.685160 [info ] [MainThread]:   job_retries: 1
+[0m12:57:37.686038 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m12:57:37.686979 [info ] [MainThread]:   job_execution_timeout_seconds: None
+[0m12:57:37.687734 [info ] [MainThread]:   timeout_seconds: None
+[0m12:57:37.688516 [info ] [MainThread]:   client_id: None
+[0m12:57:37.689136 [info ] [MainThread]:   token_uri: None
+[0m12:57:37.689712 [info ] [MainThread]:   compute_region: None
+[0m12:57:37.690426 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m12:57:37.691248 [info ] [MainThread]:   gcs_bucket: None
+[0m12:57:37.691880 [info ] [MainThread]:   dataproc_batch: None
+[0m12:57:37.692670 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m12:57:38.014769 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m12:57:38.015586 [debug] [MainThread]: On debug: select 1 as id
+[0m12:57:38.016690 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:57:39.038028 [error] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gasag-465208&j=bq:EU:ac7ba1e4-31d0-4096-85ab-627d40e03d8f&page=queryresults
+[0m12:57:39.041961 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m12:57:39.044393 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:57:39.046837 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Access Denied: Project gasag-465208: User does not have bigquery.jobs.create permission in project gasag-465208.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m12:57:39.051127 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 4.8844094, "process_in_blocks": "0", "process_kernel_time": 0.490308, "process_mem_max_rss": "351376", "process_out_blocks": "24", "process_user_time": 6.432924}
+[0m12:57:39.053428 [debug] [MainThread]: Command `dbt debug` failed at 12:57:39.053051 after 4.89 seconds
+[0m12:57:39.055032 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:57:39.056131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c5262e47eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c5238164940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c5238165960>]}
+[0m12:57:39.057302 [debug] [MainThread]: Flushing usage events
+[0m12:57:39.710720 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:59:39.150245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad6ae473eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad6ad2e2ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad6ad2e2f20>]}
+
+
+============================== 12:59:39.154343 | 888f5064-b5ef-4558-9fb7-5fdda859ab15 ==============================
+[0m12:59:39.154343 [info ] [MainThread]: Running with dbt=1.10.3
+[0m12:59:39.155292 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anton/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/anton/code/gasag/dbt_gasag/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m12:59:39.168091 [info ] [MainThread]: dbt version: 1.10.3
+[0m12:59:39.168983 [info ] [MainThread]: python version: 3.10.12
+[0m12:59:39.169558 [info ] [MainThread]: python path: /usr/bin/python3
+[0m12:59:39.170113 [info ] [MainThread]: os info: Linux-6.8.0-60-generic-x86_64-with-glibc2.35
+[0m12:59:42.158987 [info ] [MainThread]: Using profiles dir at /home/anton/.dbt
+[0m12:59:42.160002 [info ] [MainThread]: Using profiles.yml file at /home/anton/.dbt/profiles.yml
+[0m12:59:42.161219 [info ] [MainThread]: Using dbt_project.yml file at /home/anton/code/gasag/dbt_gasag/dbt_project.yml
+[0m12:59:42.162264 [info ] [MainThread]: adapter type: bigquery
+[0m12:59:42.163343 [info ] [MainThread]: adapter version: 1.9.2
+[0m12:59:42.403683 [info ] [MainThread]: Configuration:
+[0m12:59:42.404460 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:59:42.405072 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:59:42.405652 [info ] [MainThread]: Required dependencies:
+[0m12:59:42.406233 [debug] [MainThread]: Executing "git --help"
+[0m12:59:42.413782 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:59:42.414811 [debug] [MainThread]: STDERR: "b''"
+[0m12:59:42.415724 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:59:42.416601 [info ] [MainThread]: Connection:
+[0m12:59:42.417348 [info ] [MainThread]:   method: oauth
+[0m12:59:42.418125 [info ] [MainThread]:   database: gasag-465208
+[0m12:59:42.418768 [info ] [MainThread]:   execution_project: gasag-465208
+[0m12:59:42.419362 [info ] [MainThread]:   schema: raw
+[0m12:59:42.419977 [info ] [MainThread]:   location: EU
+[0m12:59:42.420582 [info ] [MainThread]:   priority: None
+[0m12:59:42.421226 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m12:59:42.422268 [info ] [MainThread]:   impersonate_service_account: None
+[0m12:59:42.423462 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m12:59:42.424653 [info ] [MainThread]:   job_retries: 1
+[0m12:59:42.425811 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m12:59:42.427359 [info ] [MainThread]:   job_execution_timeout_seconds: None
+[0m12:59:42.428725 [info ] [MainThread]:   timeout_seconds: None
+[0m12:59:42.430049 [info ] [MainThread]:   client_id: None
+[0m12:59:42.431357 [info ] [MainThread]:   token_uri: None
+[0m12:59:42.432601 [info ] [MainThread]:   compute_region: None
+[0m12:59:42.433828 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m12:59:42.435116 [info ] [MainThread]:   gcs_bucket: None
+[0m12:59:42.436272 [info ] [MainThread]:   dataproc_batch: None
+[0m12:59:42.437644 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m12:59:42.839026 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m12:59:42.839738 [debug] [MainThread]: On debug: select 1 as id
+[0m12:59:42.840332 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:59:47.459208 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gasag-465208&j=bq:EU:06a9ee29-a9b8-4d57-93f6-ba4dac3228e5&page=queryresults
+[0m12:59:47.926182 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:59:47.929787 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:59:47.934892 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 8.907183, "process_in_blocks": "160", "process_kernel_time": 0.476224, "process_mem_max_rss": "355816", "process_out_blocks": "24", "process_user_time": 6.479448}
+[0m12:59:47.939058 [debug] [MainThread]: Command `dbt debug` succeeded at 12:59:47.938399 after 8.91 seconds
+[0m12:59:47.941326 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:59:47.945877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad6ae473eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad68386aaa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ad68386b910>]}
+[0m12:59:47.949081 [debug] [MainThread]: Flushing usage events
+[0m12:59:48.597793 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:59:58.673628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b389847e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b388696ef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b388696f50>]}
+
+
+============================== 12:59:58.678636 | 9a9c2ca7-5799-4524-89f7-11de997e926b ==============================
+[0m12:59:58.678636 [info ] [MainThread]: Running with dbt=1.10.3
+[0m12:59:58.679566 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/anton/code/gasag/dbt_gasag/logs', 'debug': 'False', 'profiles_dir': '/home/anton/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:00:01.957396 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9a9c2ca7-5799-4524-89f7-11de997e926b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b35ec2c250>]}
+[0m13:00:02.094019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9a9c2ca7-5799-4524-89f7-11de997e926b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b388695360>]}
+[0m13:00:02.095018 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m13:00:02.401388 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m13:00:02.402444 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:00:02.403203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9a9c2ca7-5799-4524-89f7-11de997e926b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b35eb7f670>]}
+[0m13:00:04.537910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9a9c2ca7-5799-4524-89f7-11de997e926b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b35d382830>]}
+[0m13:00:04.666618 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anton/code/gasag/dbt_gasag/target/manifest.json
+[0m13:00:04.668872 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anton/code/gasag/dbt_gasag/target/semantic_manifest.json
+[0m13:00:04.691369 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9a9c2ca7-5799-4524-89f7-11de997e926b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b35d389f30>]}
+[0m13:00:04.692213 [info ] [MainThread]: Found 3 models, 1 source, 493 macros
+[0m13:00:04.692860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9a9c2ca7-5799-4524-89f7-11de997e926b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b35e519b70>]}
+[0m13:00:04.695188 [info ] [MainThread]: 
+[0m13:00:04.695838 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:00:04.696402 [info ] [MainThread]: 
+[0m13:00:04.697205 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:00:04.704663 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_gasag-465208'
+[0m13:00:04.705978 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:00:06.377811 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_gasag-465208, now list_gasag-465208_raw)
+[0m13:00:06.379452 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:00:06.917432 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9a9c2ca7-5799-4524-89f7-11de997e926b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b35ea0b5e0>]}
+[0m13:00:06.920924 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:00:06.934841 [debug] [Thread-1 (]: Began running node model.gasag.last_day_exceptions
+[0m13:00:06.937995 [debug] [Thread-2 (]: Began running node model.gasag.stg_kraftwerksdaten
+[0m13:00:06.940919 [info ] [Thread-1 (]: 1 of 3 START sql table model raw.last_day_exceptions ........................... [RUN]
+[0m13:00:06.944019 [info ] [Thread-2 (]: 2 of 3 START sql table model raw.stg_kraftwerksdaten ........................... [RUN]
+[0m13:00:06.946928 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_gasag-465208_raw, now model.gasag.last_day_exceptions)
+[0m13:00:06.949085 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.gasag.stg_kraftwerksdaten'
+[0m13:00:06.950663 [debug] [Thread-1 (]: Began compiling node model.gasag.last_day_exceptions
+[0m13:00:06.952202 [debug] [Thread-2 (]: Began compiling node model.gasag.stg_kraftwerksdaten
+[0m13:00:06.977085 [debug] [Thread-1 (]: Writing injected SQL for node "model.gasag.last_day_exceptions"
+[0m13:00:06.978799 [debug] [Thread-2 (]: Writing injected SQL for node "model.gasag.stg_kraftwerksdaten"
+[0m13:00:06.980183 [debug] [Thread-2 (]: Began executing node model.gasag.stg_kraftwerksdaten
+[0m13:00:06.996581 [debug] [Thread-1 (]: Began executing node model.gasag.last_day_exceptions
+[0m13:00:07.080934 [debug] [Thread-2 (]: Writing runtime sql for node "model.gasag.stg_kraftwerksdaten"
+[0m13:00:07.079337 [debug] [Thread-1 (]: Writing runtime sql for node "model.gasag.last_day_exceptions"
+[0m13:00:07.082759 [debug] [Thread-2 (]: On model.gasag.stg_kraftwerksdaten: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "gasag", "target_name": "dev", "node_id": "model.gasag.stg_kraftwerksdaten"} */
+
+  
+    
+
+    create or replace table `gasag-465208`.`raw`.`stg_kraftwerksdaten`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH raw_data AS (
+    SELECT
+        Kraftwerk,
+        Timestamp,
+        Zaehlerstand,
+        -- Flag decreasing meter readings
+        CASE
+            WHEN LAG(Zaehlerstand) OVER (PARTITION BY Kraftwerk ORDER BY Timestamp) > Zaehlerstand
+            THEN TRUE
+            ELSE FALSE
+        END AS is_decreasing_zaehlerstand
+    FROM `gasag-465208`.`raw`.`kraftwerksdaten_raw`
+),
+
+max_date AS (
+    SELECT MAX(DATE(Timestamp)) as last_date
+    FROM `gasag-465208`.`raw`.`kraftwerksdaten_raw`
+),
+
+cleaned_data AS (
+    SELECT
+        Kraftwerk,
+        Timestamp,
+        Zaehlerstand,
+        is_decreasing_zaehlerstand,
+        -- Flag last day dynamically
+        CASE
+            WHEN DATE(Timestamp) = (SELECT last_date FROM max_date) THEN TRUE
+            ELSE FALSE
+        END AS is_last_day,
+        -- Calculate Leistung (NULL for decreasing readings or first timestamp)
+        CASE
+            WHEN is_decreasing_zaehlerstand THEN NULL
+            ELSE Zaehlerstand - LAG(Zaehlerstand) OVER (PARTITION BY Kraftwerk ORDER BY Timestamp)
+        END AS leistung
+    FROM raw_data
+)
+
+SELECT
+    Kraftwerk,
+    Timestamp,
+    Zaehlerstand,
+    is_decreasing_zaehlerstand,
+    is_last_day,
+    leistung,
+    -- Flag peak loads > 50MW (only for non-NULL Leistung)
+    CASE
+        WHEN leistung IS NOT NULL AND leistung > 50 THEN TRUE
+        ELSE FALSE
+    END AS is_peak_load
+FROM cleaned_data
+WHERE Timestamp > '2024-01-01 00:00:00'
+    );
+  
+[0m13:00:07.083719 [debug] [Thread-1 (]: On model.gasag.last_day_exceptions: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "gasag", "target_name": "dev", "node_id": "model.gasag.last_day_exceptions"} */
+
+  
+    
+
+    create or replace table `gasag-465208`.`raw`.`last_day_exceptions`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH raw_data AS (
+    SELECT
+        Kraftwerk,
+        Timestamp,
+        Zaehlerstand,
+        -- Calculate raw Leistung (including negative values)
+        Zaehlerstand - LAG(Zaehlerstand) OVER (PARTITION BY Kraftwerk ORDER BY Timestamp) AS raw_leistung
+    FROM `gasag-465208`.`raw`.`kraftwerksdaten_raw`
+),
+
+max_date AS (
+    SELECT MAX(DATE(Timestamp)) as last_date
+    FROM `gasag-465208`.`raw`.`kraftwerksdaten_raw`
+),
+
+last_day_data AS (
+    SELECT
+        Kraftwerk,
+        Timestamp,
+        EXTRACT(HOUR FROM Timestamp) AS hour_of_day,
+        raw_leistung,
+        -- Flag for peak load (> 50MW)
+        CASE
+            WHEN raw_leistung > 50 THEN TRUE
+            ELSE FALSE
+        END AS is_peak_load,
+        -- Flag for negative Leistung
+        CASE
+            WHEN raw_leistung < 0 THEN TRUE
+            ELSE FALSE
+        END AS is_negative_leistung
+    FROM raw_data
+    WHERE DATE(Timestamp) = (SELECT last_date FROM max_date)
+)
+
+SELECT
+    hour_of_day,
+    Kraftwerk,
+    is_peak_load,
+    is_negative_leistung,
+    raw_leistung AS leistung
+FROM last_day_data
+WHERE raw_leistung IS NOT NULL  -- Only show rows with valid Leistung
+ORDER BY hour_of_day, Kraftwerk
+    );
+  
+[0m13:00:07.084587 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:00:07.086128 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:00:07.512071 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gasag-465208&j=bq:EU:8c72f9df-4b42-422e-bf8d-bd2c4daac6ee&page=queryresults
+[0m13:00:07.513222 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gasag-465208&j=bq:EU:8c72f9df-4b42-422e-bf8d-bd2c4daac6ee&page=queryresults
+[0m13:00:07.516054 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gasag-465208&j=bq:EU:af0e2ae4-5200-4ad0-ba6a-fcde58c91b86&page=queryresults
+[0m13:00:07.517243 [error] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gasag-465208&j=bq:EU:af0e2ae4-5200-4ad0-ba6a-fcde58c91b86&page=queryresults
+[0m13:00:07.526880 [debug] [Thread-1 (]: Database Error in model last_day_exceptions (models/marts/last_day_exceptions.sql)
+  Not found: Dataset gasag-465208:raw was not found in location EU
+  compiled code at target/run/gasag/models/marts/last_day_exceptions.sql
+[0m13:00:07.529739 [debug] [Thread-2 (]: Database Error in model stg_kraftwerksdaten (models/staging/stg_kraftwerksdaten.sql)
+  Not found: Dataset gasag-465208:raw was not found in location EU
+  compiled code at target/run/gasag/models/staging/stg_kraftwerksdaten.sql
+[0m13:00:07.533229 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9a9c2ca7-5799-4524-89f7-11de997e926b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b389939330>]}
+[0m13:00:07.534178 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9a9c2ca7-5799-4524-89f7-11de997e926b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b35d3cb070>]}
+[0m13:00:07.536501 [error] [Thread-1 (]: 1 of 3 ERROR creating sql table model raw.last_day_exceptions .................. [[31mERROR[0m in 0.58s]
+[0m13:00:07.538275 [error] [Thread-2 (]: 2 of 3 ERROR creating sql table model raw.stg_kraftwerksdaten .................. [[31mERROR[0m in 0.58s]
+[0m13:00:07.540945 [debug] [Thread-1 (]: Finished running node model.gasag.last_day_exceptions
+[0m13:00:07.542580 [debug] [Thread-2 (]: Finished running node model.gasag.stg_kraftwerksdaten
+[0m13:00:07.543873 [debug] [Thread-7 (]: Marking all children of 'model.gasag.last_day_exceptions' to be skipped because of status 'error'.  Reason: Database Error in model last_day_exceptions (models/marts/last_day_exceptions.sql)
+  Not found: Dataset gasag-465208:raw was not found in location EU
+  compiled code at target/run/gasag/models/marts/last_day_exceptions.sql.
+[0m13:00:07.546457 [debug] [Thread-7 (]: Marking all children of 'model.gasag.stg_kraftwerksdaten' to be skipped because of status 'error'.  Reason: Database Error in model stg_kraftwerksdaten (models/staging/stg_kraftwerksdaten.sql)
+  Not found: Dataset gasag-465208:raw was not found in location EU
+  compiled code at target/run/gasag/models/staging/stg_kraftwerksdaten.sql.
+[0m13:00:07.548051 [debug] [Thread-4 (]: Began running node model.gasag.kraftwerke_metrics
+[0m13:00:07.548909 [info ] [Thread-4 (]: 3 of 3 SKIP relation raw.kraftwerke_metrics .................................... [[33mSKIP[0m]
+[0m13:00:07.549823 [debug] [Thread-4 (]: Finished running node model.gasag.kraftwerke_metrics
+[0m13:00:07.552453 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:00:07.554125 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:00:07.554944 [debug] [MainThread]: Connection 'model.gasag.last_day_exceptions' was properly closed.
+[0m13:00:07.555971 [debug] [MainThread]: Connection 'model.gasag.stg_kraftwerksdaten' was properly closed.
+[0m13:00:07.557662 [info ] [MainThread]: 
+[0m13:00:07.558671 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 2.86 seconds (2.86s).
+[0m13:00:07.560438 [debug] [MainThread]: Command end result
+[0m13:00:07.604010 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anton/code/gasag/dbt_gasag/target/manifest.json
+[0m13:00:07.608384 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anton/code/gasag/dbt_gasag/target/semantic_manifest.json
+[0m13:00:07.617901 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anton/code/gasag/dbt_gasag/target/run_results.json
+[0m13:00:07.618936 [info ] [MainThread]: 
+[0m13:00:07.620198 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m13:00:07.621289 [info ] [MainThread]: 
+[0m13:00:07.623571 [error] [MainThread]: [31mFailure in model last_day_exceptions (models/marts/last_day_exceptions.sql)[0m
+[0m13:00:07.625215 [error] [MainThread]:   Database Error in model last_day_exceptions (models/marts/last_day_exceptions.sql)
+  Not found: Dataset gasag-465208:raw was not found in location EU
+  compiled code at target/run/gasag/models/marts/last_day_exceptions.sql
+[0m13:00:07.626358 [info ] [MainThread]: 
+[0m13:00:07.627195 [info ] [MainThread]:   compiled code at target/compiled/gasag/models/marts/last_day_exceptions.sql
+[0m13:00:07.627926 [info ] [MainThread]: 
+[0m13:00:07.628714 [error] [MainThread]: [31mFailure in model stg_kraftwerksdaten (models/staging/stg_kraftwerksdaten.sql)[0m
+[0m13:00:07.629435 [error] [MainThread]:   Database Error in model stg_kraftwerksdaten (models/staging/stg_kraftwerksdaten.sql)
+  Not found: Dataset gasag-465208:raw was not found in location EU
+  compiled code at target/run/gasag/models/staging/stg_kraftwerksdaten.sql
+[0m13:00:07.630056 [info ] [MainThread]: 
+[0m13:00:07.630756 [info ] [MainThread]:   compiled code at target/compiled/gasag/models/staging/stg_kraftwerksdaten.sql
+[0m13:00:07.631743 [info ] [MainThread]: 
+[0m13:00:07.632956 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=1 NO-OP=0 TOTAL=3
+[0m13:00:07.634894 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 9.090583, "process_in_blocks": "168", "process_kernel_time": 0.53189, "process_mem_max_rss": "370364", "process_out_blocks": "3096", "process_user_time": 9.459267}
+[0m13:00:07.636751 [debug] [MainThread]: Command `dbt run` failed at 13:00:07.636390 after 9.09 seconds
+[0m13:00:07.638187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b389847e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b363aa3c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b3897b5c00>]}
+[0m13:00:07.639512 [debug] [MainThread]: Flushing usage events
+[0m13:00:08.272588 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:02:29.017195 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7af9c507fe20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7af9c3ef6ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7af9c3ef6f20>]}
+
+
+============================== 13:02:29.020707 | e13f262c-e122-4b36-a07e-3e43c8f05bbd ==============================
+[0m13:02:29.020707 [info ] [MainThread]: Running with dbt=1.10.3
+[0m13:02:29.021528 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/anton/code/gasag/dbt_gasag/logs', 'profiles_dir': '/home/anton/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:02:32.282348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e13f262c-e122-4b36-a07e-3e43c8f05bbd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7af9c6bfb760>]}
+[0m13:02:32.417360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e13f262c-e122-4b36-a07e-3e43c8f05bbd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7af9c3ef5330>]}
+[0m13:02:32.418335 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m13:02:32.738638 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m13:02:32.932752 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:02:32.933694 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:02:32.996460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e13f262c-e122-4b36-a07e-3e43c8f05bbd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7af999e406a0>]}
+[0m13:02:33.133831 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anton/code/gasag/dbt_gasag/target/manifest.json
+[0m13:02:33.136107 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anton/code/gasag/dbt_gasag/target/semantic_manifest.json
+[0m13:02:33.152089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e13f262c-e122-4b36-a07e-3e43c8f05bbd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7af999fbca00>]}
+[0m13:02:33.152898 [info ] [MainThread]: Found 3 models, 1 source, 493 macros
+[0m13:02:33.153570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e13f262c-e122-4b36-a07e-3e43c8f05bbd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7af999ff5d50>]}
+[0m13:02:33.156365 [info ] [MainThread]: 
+[0m13:02:33.157402 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:02:33.158373 [info ] [MainThread]: 
+[0m13:02:33.160615 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:02:33.167714 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_gasag-465208'
+[0m13:02:33.168519 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:02:35.140453 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_gasag-465208, now list_gasag-465208_raw)
+[0m13:02:35.144747 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:02:35.778359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e13f262c-e122-4b36-a07e-3e43c8f05bbd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7af9c6c0d630>]}
+[0m13:02:35.781676 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:02:35.793059 [debug] [Thread-1 (]: Began running node model.gasag.last_day_exceptions
+[0m13:02:35.795290 [debug] [Thread-2 (]: Began running node model.gasag.stg_kraftwerksdaten
+[0m13:02:35.798331 [info ] [Thread-1 (]: 1 of 3 START sql table model raw.last_day_exceptions ........................... [RUN]
+[0m13:02:35.800936 [info ] [Thread-2 (]: 2 of 3 START sql table model raw.stg_kraftwerksdaten ........................... [RUN]
+[0m13:02:35.802933 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_gasag-465208_raw, now model.gasag.last_day_exceptions)
+[0m13:02:35.806867 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.gasag.stg_kraftwerksdaten'
+[0m13:02:35.808862 [debug] [Thread-1 (]: Began compiling node model.gasag.last_day_exceptions
+[0m13:02:35.810123 [debug] [Thread-2 (]: Began compiling node model.gasag.stg_kraftwerksdaten
+[0m13:02:35.826854 [debug] [Thread-1 (]: Writing injected SQL for node "model.gasag.last_day_exceptions"
+[0m13:02:35.835557 [debug] [Thread-2 (]: Writing injected SQL for node "model.gasag.stg_kraftwerksdaten"
+[0m13:02:35.837059 [debug] [Thread-1 (]: Began executing node model.gasag.last_day_exceptions
+[0m13:02:35.843318 [debug] [Thread-2 (]: Began executing node model.gasag.stg_kraftwerksdaten
+[0m13:02:36.070937 [debug] [Thread-2 (]: Writing runtime sql for node "model.gasag.stg_kraftwerksdaten"
+[0m13:02:36.074040 [debug] [Thread-1 (]: Writing runtime sql for node "model.gasag.last_day_exceptions"
+[0m13:02:36.075480 [debug] [Thread-2 (]: On model.gasag.stg_kraftwerksdaten: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "gasag", "target_name": "dev", "node_id": "model.gasag.stg_kraftwerksdaten"} */
+
+  
+    
+
+    create or replace table `gasag-465208`.`raw`.`stg_kraftwerksdaten`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH raw_data AS (
+    SELECT
+        Kraftwerk,
+        Timestamp,
+        Zaehlerstand,
+        -- Flag decreasing meter readings
+        CASE
+            WHEN LAG(Zaehlerstand) OVER (PARTITION BY Kraftwerk ORDER BY Timestamp) > Zaehlerstand
+            THEN TRUE
+            ELSE FALSE
+        END AS is_decreasing_zaehlerstand
+    FROM `gasag-465208`.`raw`.`kraftwerksdaten_raw`
+),
+
+max_date AS (
+    SELECT MAX(DATE(Timestamp)) as last_date
+    FROM `gasag-465208`.`raw`.`kraftwerksdaten_raw`
+),
+
+cleaned_data AS (
+    SELECT
+        Kraftwerk,
+        Timestamp,
+        Zaehlerstand,
+        is_decreasing_zaehlerstand,
+        -- Flag last day dynamically
+        CASE
+            WHEN DATE(Timestamp) = (SELECT last_date FROM max_date) THEN TRUE
+            ELSE FALSE
+        END AS is_last_day,
+        -- Calculate Leistung (NULL for decreasing readings or first timestamp)
+        CASE
+            WHEN is_decreasing_zaehlerstand THEN NULL
+            ELSE Zaehlerstand - LAG(Zaehlerstand) OVER (PARTITION BY Kraftwerk ORDER BY Timestamp)
+        END AS leistung
+    FROM raw_data
+)
+
+SELECT
+    Kraftwerk,
+    Timestamp,
+    Zaehlerstand,
+    is_decreasing_zaehlerstand,
+    is_last_day,
+    leistung,
+    -- Flag peak loads > 50MW (only for non-NULL Leistung)
+    CASE
+        WHEN leistung IS NOT NULL AND leistung > 50 THEN TRUE
+        ELSE FALSE
+    END AS is_peak_load
+FROM cleaned_data
+WHERE Timestamp > '2024-01-01 00:00:00'
+    );
+  
+[0m13:02:36.076683 [debug] [Thread-1 (]: On model.gasag.last_day_exceptions: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "gasag", "target_name": "dev", "node_id": "model.gasag.last_day_exceptions"} */
+
+  
+    
+
+    create or replace table `gasag-465208`.`raw`.`last_day_exceptions`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH raw_data AS (
+    SELECT
+        Kraftwerk,
+        Timestamp,
+        Zaehlerstand,
+        -- Calculate raw Leistung (including negative values)
+        Zaehlerstand - LAG(Zaehlerstand) OVER (PARTITION BY Kraftwerk ORDER BY Timestamp) AS raw_leistung
+    FROM `gasag-465208`.`raw`.`kraftwerksdaten_raw`
+),
+
+max_date AS (
+    SELECT MAX(DATE(Timestamp)) as last_date
+    FROM `gasag-465208`.`raw`.`kraftwerksdaten_raw`
+),
+
+last_day_data AS (
+    SELECT
+        Kraftwerk,
+        Timestamp,
+        EXTRACT(HOUR FROM Timestamp) AS hour_of_day,
+        raw_leistung,
+        -- Flag for peak load (> 50MW)
+        CASE
+            WHEN raw_leistung > 50 THEN TRUE
+            ELSE FALSE
+        END AS is_peak_load,
+        -- Flag for negative Leistung
+        CASE
+            WHEN raw_leistung < 0 THEN TRUE
+            ELSE FALSE
+        END AS is_negative_leistung
+    FROM raw_data
+    WHERE DATE(Timestamp) = (SELECT last_date FROM max_date)
+)
+
+SELECT
+    hour_of_day,
+    Kraftwerk,
+    is_peak_load,
+    is_negative_leistung,
+    raw_leistung AS leistung
+FROM last_day_data
+WHERE raw_leistung IS NOT NULL  -- Only show rows with valid Leistung
+ORDER BY hour_of_day, Kraftwerk
+    );
+  
+[0m13:02:36.077587 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:02:36.078451 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:02:36.577922 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gasag-465208&j=bq:EU:a1d8ae40-a495-4e7b-af68-c3b17883c640&page=queryresults
+[0m13:02:36.580582 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gasag-465208&j=bq:EU:a1d8ae40-a495-4e7b-af68-c3b17883c640&page=queryresults
+[0m13:02:36.592955 [debug] [Thread-1 (]: Database Error in model last_day_exceptions (models/marts/last_day_exceptions.sql)
+  Not found: Dataset gasag-465208:raw was not found in location EU
+  compiled code at target/run/gasag/models/marts/last_day_exceptions.sql
+[0m13:02:36.602545 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e13f262c-e122-4b36-a07e-3e43c8f05bbd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7af999e74c70>]}
+[0m13:02:36.605285 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gasag-465208&j=bq:EU:99721cae-90b8-4baf-944c-746e96e77f1c&page=queryresults
+[0m13:02:36.608706 [error] [Thread-1 (]: 1 of 3 ERROR creating sql table model raw.last_day_exceptions .................. [[31mERROR[0m in 0.79s]
+[0m13:02:36.611747 [error] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gasag-465208&j=bq:EU:99721cae-90b8-4baf-944c-746e96e77f1c&page=queryresults
+[0m13:02:36.613319 [debug] [Thread-1 (]: Finished running node model.gasag.last_day_exceptions
+[0m13:02:36.616669 [debug] [Thread-7 (]: Marking all children of 'model.gasag.last_day_exceptions' to be skipped because of status 'error'.  Reason: Database Error in model last_day_exceptions (models/marts/last_day_exceptions.sql)
+  Not found: Dataset gasag-465208:raw was not found in location EU
+  compiled code at target/run/gasag/models/marts/last_day_exceptions.sql.
+[0m13:02:36.619065 [debug] [Thread-2 (]: Database Error in model stg_kraftwerksdaten (models/staging/stg_kraftwerksdaten.sql)
+  Not found: Dataset gasag-465208:raw was not found in location EU
+  compiled code at target/run/gasag/models/staging/stg_kraftwerksdaten.sql
+[0m13:02:36.620086 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e13f262c-e122-4b36-a07e-3e43c8f05bbd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7af99a057c10>]}
+[0m13:02:36.621660 [error] [Thread-2 (]: 2 of 3 ERROR creating sql table model raw.stg_kraftwerksdaten .................. [[31mERROR[0m in 0.82s]
+[0m13:02:36.622938 [debug] [Thread-2 (]: Finished running node model.gasag.stg_kraftwerksdaten
+[0m13:02:36.624131 [debug] [Thread-7 (]: Marking all children of 'model.gasag.stg_kraftwerksdaten' to be skipped because of status 'error'.  Reason: Database Error in model stg_kraftwerksdaten (models/staging/stg_kraftwerksdaten.sql)
+  Not found: Dataset gasag-465208:raw was not found in location EU
+  compiled code at target/run/gasag/models/staging/stg_kraftwerksdaten.sql.
+[0m13:02:36.626291 [debug] [Thread-4 (]: Began running node model.gasag.kraftwerke_metrics
+[0m13:02:36.627518 [info ] [Thread-4 (]: 3 of 3 SKIP relation raw.kraftwerke_metrics .................................... [[33mSKIP[0m]
+[0m13:02:36.628452 [debug] [Thread-4 (]: Finished running node model.gasag.kraftwerke_metrics
+[0m13:02:36.630422 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:02:36.632170 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:02:36.633312 [debug] [MainThread]: Connection 'model.gasag.last_day_exceptions' was properly closed.
+[0m13:02:36.634488 [debug] [MainThread]: Connection 'model.gasag.stg_kraftwerksdaten' was properly closed.
+[0m13:02:36.635780 [info ] [MainThread]: 
+[0m13:02:36.637061 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 3.48 seconds (3.48s).
+[0m13:02:36.639873 [debug] [MainThread]: Command end result
+[0m13:02:36.678138 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anton/code/gasag/dbt_gasag/target/manifest.json
+[0m13:02:36.680623 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anton/code/gasag/dbt_gasag/target/semantic_manifest.json
+[0m13:02:36.693448 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anton/code/gasag/dbt_gasag/target/run_results.json
+[0m13:02:36.694213 [info ] [MainThread]: 
+[0m13:02:36.695156 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m13:02:36.696417 [info ] [MainThread]: 
+[0m13:02:36.697407 [error] [MainThread]: [31mFailure in model last_day_exceptions (models/marts/last_day_exceptions.sql)[0m
+[0m13:02:36.698246 [error] [MainThread]:   Database Error in model last_day_exceptions (models/marts/last_day_exceptions.sql)
+  Not found: Dataset gasag-465208:raw was not found in location EU
+  compiled code at target/run/gasag/models/marts/last_day_exceptions.sql
+[0m13:02:36.698939 [info ] [MainThread]: 
+[0m13:02:36.699658 [info ] [MainThread]:   compiled code at target/compiled/gasag/models/marts/last_day_exceptions.sql
+[0m13:02:36.700327 [info ] [MainThread]: 
+[0m13:02:36.701670 [error] [MainThread]: [31mFailure in model stg_kraftwerksdaten (models/staging/stg_kraftwerksdaten.sql)[0m
+[0m13:02:36.703166 [error] [MainThread]:   Database Error in model stg_kraftwerksdaten (models/staging/stg_kraftwerksdaten.sql)
+  Not found: Dataset gasag-465208:raw was not found in location EU
+  compiled code at target/run/gasag/models/staging/stg_kraftwerksdaten.sql
+[0m13:02:36.704321 [info ] [MainThread]: 
+[0m13:02:36.705934 [info ] [MainThread]:   compiled code at target/compiled/gasag/models/staging/stg_kraftwerksdaten.sql
+[0m13:02:36.707222 [info ] [MainThread]: 
+[0m13:02:36.708774 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=1 NO-OP=0 TOTAL=3
+[0m13:02:36.711091 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 7.8152246, "process_in_blocks": "0", "process_kernel_time": 0.507207, "process_mem_max_rss": "360908", "process_out_blocks": "2104", "process_user_time": 7.573171}
+[0m13:02:36.713007 [debug] [MainThread]: Command `dbt run` failed at 13:02:36.712650 after 7.82 seconds
+[0m13:02:36.714466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7af9c507fe20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7af9c4fd6e60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7af999fbe8f0>]}
+[0m13:02:36.716372 [debug] [MainThread]: Flushing usage events
+[0m13:02:37.431142 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:03:05.553080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76423a187eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x764238ffaef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x764238ffaf50>]}
+
+
+============================== 13:03:05.556586 | 7942018a-061a-4215-86f7-5b24f185f6c1 ==============================
+[0m13:03:05.556586 [info ] [MainThread]: Running with dbt=1.10.3
+[0m13:03:05.557394 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anton/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/home/anton/code/gasag/dbt_gasag/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:03:08.880653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7942018a-061a-4215-86f7-5b24f185f6c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76423935a7d0>]}
+[0m13:03:09.022482 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7942018a-061a-4215-86f7-5b24f185f6c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x764238ff9360>]}
+[0m13:03:09.023454 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m13:03:09.343643 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m13:03:09.501793 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m13:03:09.502719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '7942018a-061a-4215-86f7-5b24f185f6c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x764239a156f0>]}
+[0m13:03:11.666070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7942018a-061a-4215-86f7-5b24f185f6c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76420dde4130>]}
+[0m13:03:11.790378 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anton/code/gasag/dbt_gasag/target/manifest.json
+[0m13:03:11.792598 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anton/code/gasag/dbt_gasag/target/semantic_manifest.json
+[0m13:03:11.814812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7942018a-061a-4215-86f7-5b24f185f6c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76420dd0c5e0>]}
+[0m13:03:11.816100 [info ] [MainThread]: Found 3 models, 1 source, 493 macros
+[0m13:03:11.816778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7942018a-061a-4215-86f7-5b24f185f6c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76420dde5660>]}
+[0m13:03:11.819138 [info ] [MainThread]: 
+[0m13:03:11.819959 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:03:11.820525 [info ] [MainThread]: 
+[0m13:03:11.821337 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:03:11.829135 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_gasag-465208'
+[0m13:03:11.830127 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:03:13.500101 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_gasag-465208, now list_gasag-465208_raw)
+[0m13:03:13.502698 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:03:13.947024 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7942018a-061a-4215-86f7-5b24f185f6c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76420dd333a0>]}
+[0m13:03:13.949648 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:03:13.961447 [debug] [Thread-1 (]: Began running node model.gasag.last_day_exceptions
+[0m13:03:13.964575 [debug] [Thread-2 (]: Began running node model.gasag.stg_kraftwerksdaten
+[0m13:03:13.967964 [info ] [Thread-1 (]: 1 of 3 START sql table model raw.last_day_exceptions ........................... [RUN]
+[0m13:03:13.970999 [info ] [Thread-2 (]: 2 of 3 START sql table model raw.stg_kraftwerksdaten ........................... [RUN]
+[0m13:03:13.974151 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_gasag-465208_raw, now model.gasag.last_day_exceptions)
+[0m13:03:13.978272 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.gasag.stg_kraftwerksdaten'
+[0m13:03:13.982501 [debug] [Thread-1 (]: Began compiling node model.gasag.last_day_exceptions
+[0m13:03:13.986420 [debug] [Thread-2 (]: Began compiling node model.gasag.stg_kraftwerksdaten
+[0m13:03:14.012610 [debug] [Thread-1 (]: Writing injected SQL for node "model.gasag.last_day_exceptions"
+[0m13:03:14.019643 [debug] [Thread-2 (]: Writing injected SQL for node "model.gasag.stg_kraftwerksdaten"
+[0m13:03:14.020981 [debug] [Thread-1 (]: Began executing node model.gasag.last_day_exceptions
+[0m13:03:14.027485 [debug] [Thread-2 (]: Began executing node model.gasag.stg_kraftwerksdaten
+[0m13:03:14.150269 [debug] [Thread-1 (]: Writing runtime sql for node "model.gasag.last_day_exceptions"
+[0m13:03:14.152654 [debug] [Thread-2 (]: Writing runtime sql for node "model.gasag.stg_kraftwerksdaten"
+[0m13:03:14.153678 [debug] [Thread-1 (]: On model.gasag.last_day_exceptions: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "gasag", "target_name": "dev", "node_id": "model.gasag.last_day_exceptions"} */
+
+  
+    
+
+    create or replace table `gasag-465208`.`raw`.`last_day_exceptions`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH raw_data AS (
+    SELECT
+        Kraftwerk,
+        Timestamp,
+        Zaehlerstand,
+        -- Calculate raw Leistung (including negative values)
+        Zaehlerstand - LAG(Zaehlerstand) OVER (PARTITION BY Kraftwerk ORDER BY Timestamp) AS raw_leistung
+    FROM `gasag-465208`.`raw`.`kraftwerksdaten_raw`
+),
+
+max_date AS (
+    SELECT MAX(DATE(Timestamp)) as last_date
+    FROM `gasag-465208`.`raw`.`kraftwerksdaten_raw`
+),
+
+last_day_data AS (
+    SELECT
+        Kraftwerk,
+        Timestamp,
+        EXTRACT(HOUR FROM Timestamp) AS hour_of_day,
+        raw_leistung,
+        -- Flag for peak load (> 50MW)
+        CASE
+            WHEN raw_leistung > 50 THEN TRUE
+            ELSE FALSE
+        END AS is_peak_load,
+        -- Flag for negative Leistung
+        CASE
+            WHEN raw_leistung < 0 THEN TRUE
+            ELSE FALSE
+        END AS is_negative_leistung
+    FROM raw_data
+    WHERE DATE(Timestamp) = (SELECT last_date FROM max_date)
+)
+
+SELECT
+    hour_of_day,
+    Kraftwerk,
+    is_peak_load,
+    is_negative_leistung,
+    raw_leistung AS leistung
+FROM last_day_data
+WHERE raw_leistung IS NOT NULL  -- Only show rows with valid Leistung
+ORDER BY hour_of_day, Kraftwerk
+    );
+  
+[0m13:03:14.154437 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:03:14.155304 [debug] [Thread-2 (]: On model.gasag.stg_kraftwerksdaten: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "gasag", "target_name": "dev", "node_id": "model.gasag.stg_kraftwerksdaten"} */
+
+  
+    
+
+    create or replace table `gasag-465208`.`raw`.`stg_kraftwerksdaten`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH raw_data AS (
+    SELECT
+        Kraftwerk,
+        Timestamp,
+        Zaehlerstand,
+        -- Flag decreasing meter readings
+        CASE
+            WHEN LAG(Zaehlerstand) OVER (PARTITION BY Kraftwerk ORDER BY Timestamp) > Zaehlerstand
+            THEN TRUE
+            ELSE FALSE
+        END AS is_decreasing_zaehlerstand
+    FROM `gasag-465208`.`raw`.`kraftwerksdaten_raw`
+),
+
+max_date AS (
+    SELECT MAX(DATE(Timestamp)) as last_date
+    FROM `gasag-465208`.`raw`.`kraftwerksdaten_raw`
+),
+
+cleaned_data AS (
+    SELECT
+        Kraftwerk,
+        Timestamp,
+        Zaehlerstand,
+        is_decreasing_zaehlerstand,
+        -- Flag last day dynamically
+        CASE
+            WHEN DATE(Timestamp) = (SELECT last_date FROM max_date) THEN TRUE
+            ELSE FALSE
+        END AS is_last_day,
+        -- Calculate Leistung (NULL for decreasing readings or first timestamp)
+        CASE
+            WHEN is_decreasing_zaehlerstand THEN NULL
+            ELSE Zaehlerstand - LAG(Zaehlerstand) OVER (PARTITION BY Kraftwerk ORDER BY Timestamp)
+        END AS leistung
+    FROM raw_data
+)
+
+SELECT
+    Kraftwerk,
+    Timestamp,
+    Zaehlerstand,
+    is_decreasing_zaehlerstand,
+    is_last_day,
+    leistung,
+    -- Flag peak loads > 50MW (only for non-NULL Leistung)
+    CASE
+        WHEN leistung IS NOT NULL AND leistung > 50 THEN TRUE
+        ELSE FALSE
+    END AS is_peak_load
+FROM cleaned_data
+WHERE Timestamp > '2024-01-01 00:00:00'
+    );
+  
+[0m13:03:14.157743 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:03:15.775400 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gasag-465208&j=bq:US:9263e6ff-9548-4ca7-9e49-bb4d6d15272e&page=queryresults
+[0m13:03:15.778053 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gasag-465208&j=bq:US:a7be434b-b530-4f9c-965f-e5f75c965934&page=queryresults
+[0m13:03:16.041164 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gasag-465208&j=bq:US:9263e6ff-9548-4ca7-9e49-bb4d6d15272e&page=queryresults
+[0m13:03:16.054744 [debug] [Thread-1 (]: Database Error in model last_day_exceptions (models/marts/last_day_exceptions.sql)
+  No matching signature for function EXTRACT for argument types: DATE_TIME_PART FROM STRING
+    Signature: EXTRACT(DATE_TIME_PART FROM DATE)
+      Argument 1: Unable to coerce type STRING to expected type DATE
+    Signature: EXTRACT(DATE_TIME_PART FROM TIMESTAMP [AT TIME ZONE STRING])
+      Argument 1: Unable to coerce type STRING to expected type TIMESTAMP
+    Signature: EXTRACT(DATE_TIME_PART FROM DATETIME)
+      Argument 1: Unable to coerce type STRING to expected type DATETIME
+    Signature: EXTRACT(DATE_TIME_PART FROM TIME)
+      Argument 1: Unable to coerce type STRING to expected type TIME
+    Signature: EXTRACT(DATE_TIME_PART FROM INTERVAL)
+      Argument 1: Unable to coerce type STRING to expected type INTERVAL at [32:9]
+  compiled code at target/run/gasag/models/marts/last_day_exceptions.sql
+[0m13:03:16.062846 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7942018a-061a-4215-86f7-5b24f185f6c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76423a33d2a0>]}
+[0m13:03:16.066224 [error] [Thread-1 (]: 1 of 3 ERROR creating sql table model raw.last_day_exceptions .................. [[31mERROR[0m in 2.08s]
+[0m13:03:16.068791 [debug] [Thread-1 (]: Finished running node model.gasag.last_day_exceptions
+[0m13:03:16.070657 [debug] [Thread-7 (]: Marking all children of 'model.gasag.last_day_exceptions' to be skipped because of status 'error'.  Reason: Database Error in model last_day_exceptions (models/marts/last_day_exceptions.sql)
+  No matching signature for function EXTRACT for argument types: DATE_TIME_PART FROM STRING
+    Signature: EXTRACT(DATE_TIME_PART FROM DATE)
+      Argument 1: Unable to coerce type STRING to expected type DATE
+    Signature: EXTRACT(DATE_TIME_PART FROM TIMESTAMP [AT TIME ZONE STRING])
+      Argument 1: Unable to coerce type STRING to expected type TIMESTAMP
+    Signature: EXTRACT(DATE_TIME_PART FROM DATETIME)
+      Argument 1: Unable to coerce type STRING to expected type DATETIME
+    Signature: EXTRACT(DATE_TIME_PART FROM TIME)
+      Argument 1: Unable to coerce type STRING to expected type TIME
+    Signature: EXTRACT(DATE_TIME_PART FROM INTERVAL)
+      Argument 1: Unable to coerce type STRING to expected type INTERVAL at [32:9]
+  compiled code at target/run/gasag/models/marts/last_day_exceptions.sql.
+[0m13:03:16.105205 [error] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gasag-465208&j=bq:US:a7be434b-b530-4f9c-965f-e5f75c965934&page=queryresults
+[0m13:03:16.107734 [debug] [Thread-2 (]: Database Error in model stg_kraftwerksdaten (models/staging/stg_kraftwerksdaten.sql)
+  Invalid timestamp: '01.01.2024 00:00'
+  compiled code at target/run/gasag/models/staging/stg_kraftwerksdaten.sql
+[0m13:03:16.109642 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7942018a-061a-4215-86f7-5b24f185f6c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76423990d300>]}
+[0m13:03:16.111396 [error] [Thread-2 (]: 2 of 3 ERROR creating sql table model raw.stg_kraftwerksdaten .................. [[31mERROR[0m in 2.13s]
+[0m13:03:16.113469 [debug] [Thread-2 (]: Finished running node model.gasag.stg_kraftwerksdaten
+[0m13:03:16.115073 [debug] [Thread-7 (]: Marking all children of 'model.gasag.stg_kraftwerksdaten' to be skipped because of status 'error'.  Reason: Database Error in model stg_kraftwerksdaten (models/staging/stg_kraftwerksdaten.sql)
+  Invalid timestamp: '01.01.2024 00:00'
+  compiled code at target/run/gasag/models/staging/stg_kraftwerksdaten.sql.
+[0m13:03:16.116926 [debug] [Thread-4 (]: Began running node model.gasag.kraftwerke_metrics
+[0m13:03:16.118715 [info ] [Thread-4 (]: 3 of 3 SKIP relation raw.kraftwerke_metrics .................................... [[33mSKIP[0m]
+[0m13:03:16.120414 [debug] [Thread-4 (]: Finished running node model.gasag.kraftwerke_metrics
+[0m13:03:16.123090 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:03:16.125116 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:03:16.126841 [debug] [MainThread]: Connection 'model.gasag.last_day_exceptions' was properly closed.
+[0m13:03:16.127923 [debug] [MainThread]: Connection 'model.gasag.stg_kraftwerksdaten' was properly closed.
+[0m13:03:16.129085 [info ] [MainThread]: 
+[0m13:03:16.129997 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 4.31 seconds (4.31s).
+[0m13:03:16.132137 [debug] [MainThread]: Command end result
+[0m13:03:16.172805 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anton/code/gasag/dbt_gasag/target/manifest.json
+[0m13:03:16.175895 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anton/code/gasag/dbt_gasag/target/semantic_manifest.json
+[0m13:03:16.187437 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anton/code/gasag/dbt_gasag/target/run_results.json
+[0m13:03:16.188123 [info ] [MainThread]: 
+[0m13:03:16.188958 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m13:03:16.190195 [info ] [MainThread]: 
+[0m13:03:16.191287 [error] [MainThread]: [31mFailure in model last_day_exceptions (models/marts/last_day_exceptions.sql)[0m
+[0m13:03:16.193122 [error] [MainThread]:   Database Error in model last_day_exceptions (models/marts/last_day_exceptions.sql)
+  No matching signature for function EXTRACT for argument types: DATE_TIME_PART FROM STRING
+    Signature: EXTRACT(DATE_TIME_PART FROM DATE)
+      Argument 1: Unable to coerce type STRING to expected type DATE
+    Signature: EXTRACT(DATE_TIME_PART FROM TIMESTAMP [AT TIME ZONE STRING])
+      Argument 1: Unable to coerce type STRING to expected type TIMESTAMP
+    Signature: EXTRACT(DATE_TIME_PART FROM DATETIME)
+      Argument 1: Unable to coerce type STRING to expected type DATETIME
+    Signature: EXTRACT(DATE_TIME_PART FROM TIME)
+      Argument 1: Unable to coerce type STRING to expected type TIME
+    Signature: EXTRACT(DATE_TIME_PART FROM INTERVAL)
+      Argument 1: Unable to coerce type STRING to expected type INTERVAL at [32:9]
+  compiled code at target/run/gasag/models/marts/last_day_exceptions.sql
+[0m13:03:16.194363 [info ] [MainThread]: 
+[0m13:03:16.195516 [info ] [MainThread]:   compiled code at target/compiled/gasag/models/marts/last_day_exceptions.sql
+[0m13:03:16.196674 [info ] [MainThread]: 
+[0m13:03:16.198025 [error] [MainThread]: [31mFailure in model stg_kraftwerksdaten (models/staging/stg_kraftwerksdaten.sql)[0m
+[0m13:03:16.199589 [error] [MainThread]:   Database Error in model stg_kraftwerksdaten (models/staging/stg_kraftwerksdaten.sql)
+  Invalid timestamp: '01.01.2024 00:00'
+  compiled code at target/run/gasag/models/staging/stg_kraftwerksdaten.sql
+[0m13:03:16.200923 [info ] [MainThread]: 
+[0m13:03:16.202232 [info ] [MainThread]:   compiled code at target/compiled/gasag/models/staging/stg_kraftwerksdaten.sql
+[0m13:03:16.202938 [info ] [MainThread]: 
+[0m13:03:16.203953 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=1 NO-OP=0 TOTAL=3
+[0m13:03:16.205484 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 10.7744, "process_in_blocks": "0", "process_kernel_time": 0.505168, "process_mem_max_rss": "373176", "process_out_blocks": "3104", "process_user_time": 9.565257}
+[0m13:03:16.206650 [debug] [MainThread]: Command `dbt run` failed at 13:03:16.206432 after 10.78 seconds
+[0m13:03:16.207600 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76423a187eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76423920cf10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76420f0caf80>]}
+[0m13:03:16.208385 [debug] [MainThread]: Flushing usage events
+[0m13:03:16.889063 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:03:52.229705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c65ecc73e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c65ebaeaef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c65ebaeaf50>]}
+
+
+============================== 13:03:52.236522 | 3c15c5e8-0a1b-48c1-97ef-8f7fbf713c6c ==============================
+[0m13:03:52.236522 [info ] [MainThread]: Running with dbt=1.10.3
+[0m13:03:52.238150 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anton/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/anton/code/gasag/dbt_gasag/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m13:03:55.707792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3c15c5e8-0a1b-48c1-97ef-8f7fbf713c6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c65c204e5c0>]}
+[0m13:03:55.855014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3c15c5e8-0a1b-48c1-97ef-8f7fbf713c6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c65ebae9360>]}
+[0m13:03:55.855999 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m13:03:56.204067 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m13:03:56.383358 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m13:03:56.384714 [debug] [MainThread]: Partial parsing: updated file: gasag://models/marts/last_day_exceptions.sql
+[0m13:03:56.385446 [debug] [MainThread]: Partial parsing: updated file: gasag://models/staging/stg_kraftwerksdaten.sql
+[0m13:03:56.949119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3c15c5e8-0a1b-48c1-97ef-8f7fbf713c6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c65c0a451e0>]}
+[0m13:03:57.083377 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anton/code/gasag/dbt_gasag/target/manifest.json
+[0m13:03:57.086244 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anton/code/gasag/dbt_gasag/target/semantic_manifest.json
+[0m13:03:57.103278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3c15c5e8-0a1b-48c1-97ef-8f7fbf713c6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c65c0a45030>]}
+[0m13:03:57.104116 [info ] [MainThread]: Found 3 models, 1 source, 493 macros
+[0m13:03:57.104941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3c15c5e8-0a1b-48c1-97ef-8f7fbf713c6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c65c1934af0>]}
+[0m13:03:57.107170 [info ] [MainThread]: 
+[0m13:03:57.107821 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:03:57.108398 [info ] [MainThread]: 
+[0m13:03:57.109388 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:03:57.118252 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_gasag-465208'
+[0m13:03:57.119191 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:03:58.719095 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_gasag-465208, now list_gasag-465208_raw)
+[0m13:03:58.720000 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:03:59.180693 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3c15c5e8-0a1b-48c1-97ef-8f7fbf713c6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c65ebca6860>]}
+[0m13:03:59.182468 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:03:59.187461 [debug] [Thread-1 (]: Began running node model.gasag.last_day_exceptions
+[0m13:03:59.188269 [debug] [Thread-2 (]: Began running node model.gasag.stg_kraftwerksdaten
+[0m13:03:59.189255 [info ] [Thread-1 (]: 1 of 3 START sql table model raw.last_day_exceptions ........................... [RUN]
+[0m13:03:59.190288 [info ] [Thread-2 (]: 2 of 3 START sql table model raw.stg_kraftwerksdaten ........................... [RUN]
+[0m13:03:59.191339 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_gasag-465208_raw, now model.gasag.last_day_exceptions)
+[0m13:03:59.192570 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.gasag.stg_kraftwerksdaten'
+[0m13:03:59.193366 [debug] [Thread-1 (]: Began compiling node model.gasag.last_day_exceptions
+[0m13:03:59.194248 [debug] [Thread-2 (]: Began compiling node model.gasag.stg_kraftwerksdaten
+[0m13:03:59.208677 [debug] [Thread-1 (]: Writing injected SQL for node "model.gasag.last_day_exceptions"
+[0m13:03:59.218117 [debug] [Thread-2 (]: Writing injected SQL for node "model.gasag.stg_kraftwerksdaten"
+[0m13:03:59.219958 [debug] [Thread-1 (]: Began executing node model.gasag.last_day_exceptions
+[0m13:03:59.220906 [debug] [Thread-2 (]: Began executing node model.gasag.stg_kraftwerksdaten
+[0m13:03:59.432968 [debug] [Thread-1 (]: Writing runtime sql for node "model.gasag.last_day_exceptions"
+[0m13:03:59.435301 [debug] [Thread-2 (]: Writing runtime sql for node "model.gasag.stg_kraftwerksdaten"
+[0m13:03:59.436757 [debug] [Thread-1 (]: On model.gasag.last_day_exceptions: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "gasag", "target_name": "dev", "node_id": "model.gasag.last_day_exceptions"} */
+
+  
+    
+
+    create or replace table `gasag-465208`.`raw`.`last_day_exceptions`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH raw_data AS (
+    SELECT
+        Kraftwerk,
+        -- Parse German date format and convert to TIMESTAMP
+        PARSE_TIMESTAMP('%d.%m.%Y %H:%M', Timestamp) as Timestamp,
+        Zaehlerstand,
+        -- Calculate raw Leistung (including negative values)
+        Zaehlerstand - LAG(Zaehlerstand) OVER (PARTITION BY Kraftwerk ORDER BY PARSE_TIMESTAMP('%d.%m.%Y %H:%M', Timestamp)) AS raw_leistung
+    FROM `gasag-465208`.`raw`.`kraftwerksdaten_raw`
+),
+
+max_date AS (
+    SELECT MAX(DATE(PARSE_TIMESTAMP('%d.%m.%Y %H:%M', Timestamp))) as last_date
+    FROM `gasag-465208`.`raw`.`kraftwerksdaten_raw`
+),
+
+last_day_data AS (
+    SELECT
+        Kraftwerk,
+        Timestamp,
+        EXTRACT(HOUR FROM Timestamp) AS hour_of_day,
+        raw_leistung,
+        -- Flag for peak load (> 50MW)
+        CASE
+            WHEN raw_leistung > 50 THEN TRUE
+            ELSE FALSE
+        END AS is_peak_load,
+        -- Flag for negative Leistung
+        CASE
+            WHEN raw_leistung < 0 THEN TRUE
+            ELSE FALSE
+        END AS is_negative_leistung
+    FROM raw_data
+    WHERE DATE(Timestamp) = (SELECT last_date FROM max_date)
+)
+
+SELECT
+    hour_of_day,
+    Kraftwerk,
+    is_peak_load,
+    is_negative_leistung,
+    raw_leistung AS leistung
+FROM last_day_data
+WHERE raw_leistung IS NOT NULL  -- Only show rows with valid Leistung
+ORDER BY hour_of_day, Kraftwerk
+    );
+  
+[0m13:03:59.437736 [debug] [Thread-2 (]: On model.gasag.stg_kraftwerksdaten: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "gasag", "target_name": "dev", "node_id": "model.gasag.stg_kraftwerksdaten"} */
+
+  
+    
+
+    create or replace table `gasag-465208`.`raw`.`stg_kraftwerksdaten`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH raw_data AS (
+    SELECT
+        Kraftwerk,
+        -- Parse German date format and convert to TIMESTAMP
+        PARSE_TIMESTAMP('%d.%m.%Y %H:%M', Timestamp) as Timestamp,
+        Zaehlerstand,
+        -- Flag decreasing meter readings
+        CASE
+            WHEN LAG(Zaehlerstand) OVER (PARTITION BY Kraftwerk ORDER BY PARSE_TIMESTAMP('%d.%m.%Y %H:%M', Timestamp))
+            > Zaehlerstand
+            THEN TRUE
+            ELSE FALSE
+        END AS is_decreasing_zaehlerstand
+    FROM `gasag-465208`.`raw`.`kraftwerksdaten_raw`
+),
+
+max_date AS (
+    SELECT MAX(DATE(PARSE_TIMESTAMP('%d.%m.%Y %H:%M', Timestamp))) as last_date
+    FROM `gasag-465208`.`raw`.`kraftwerksdaten_raw`
+),
+
+cleaned_data AS (
+    SELECT
+        Kraftwerk,
+        Timestamp,
+        Zaehlerstand,
+        is_decreasing_zaehlerstand,
+        -- Flag last day dynamically
+        CASE
+            WHEN DATE(Timestamp) = (SELECT last_date FROM max_date) THEN TRUE
+            ELSE FALSE
+        END AS is_last_day,
+        -- Calculate Leistung (NULL for decreasing readings or first timestamp)
+        CASE
+            WHEN is_decreasing_zaehlerstand THEN NULL
+            ELSE Zaehlerstand - LAG(Zaehlerstand) OVER (PARTITION BY Kraftwerk ORDER BY Timestamp)
+        END AS leistung
+    FROM raw_data
+)
+
+SELECT
+    Kraftwerk,
+    Timestamp,
+    Zaehlerstand,
+    is_decreasing_zaehlerstand,
+    is_last_day,
+    leistung,
+    -- Flag peak loads > 50MW (only for non-NULL Leistung)
+    CASE
+        WHEN leistung IS NOT NULL AND leistung > 50 THEN TRUE
+        ELSE FALSE
+    END AS is_peak_load
+FROM cleaned_data
+WHERE Timestamp > TIMESTAMP('2024-01-01 00:00:00')
+    );
+  
+[0m13:03:59.438649 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:03:59.439412 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:04:00.329096 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gasag-465208&j=bq:US:020bfc0c-540c-423a-9ef6-874272c290e8&page=queryresults
+[0m13:04:00.338053 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gasag-465208&j=bq:US:4082a2a4-f315-4148-94bd-0b13266a9e8a&page=queryresults
+[0m13:04:03.218678 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3c15c5e8-0a1b-48c1-97ef-8f7fbf713c6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c65c6efc340>]}
+[0m13:04:03.219829 [info ] [Thread-2 (]: 2 of 3 OK created sql table model raw.stg_kraftwerksdaten ...................... [[32mCREATE TABLE (5.0k rows, 190.4 KiB processed)[0m in 4.02s]
+[0m13:04:03.220843 [debug] [Thread-2 (]: Finished running node model.gasag.stg_kraftwerksdaten
+[0m13:04:03.222003 [debug] [Thread-4 (]: Began running node model.gasag.kraftwerke_metrics
+[0m13:04:03.222999 [info ] [Thread-4 (]: 3 of 3 START sql table model raw.kraftwerke_metrics ............................ [RUN]
+[0m13:04:03.223976 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.gasag.kraftwerke_metrics'
+[0m13:04:03.224644 [debug] [Thread-4 (]: Began compiling node model.gasag.kraftwerke_metrics
+[0m13:04:03.232089 [debug] [Thread-4 (]: Writing injected SQL for node "model.gasag.kraftwerke_metrics"
+[0m13:04:03.233375 [debug] [Thread-4 (]: Began executing node model.gasag.kraftwerke_metrics
+[0m13:04:03.238292 [debug] [Thread-4 (]: Writing runtime sql for node "model.gasag.kraftwerke_metrics"
+[0m13:04:03.239898 [debug] [Thread-4 (]: On model.gasag.kraftwerke_metrics: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "gasag", "target_name": "dev", "node_id": "model.gasag.kraftwerke_metrics"} */
+
+  
+    
+
+    create or replace table `gasag-465208`.`raw`.`kraftwerke_metrics`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH staging_data AS (
+    SELECT * FROM `gasag-465208`.`raw`.`stg_kraftwerksdaten`
+),
+
+-- Historical metrics (excluding last day)
+historical_metrics AS (
+    SELECT
+        Kraftwerk,
+        -- Durchschnittliche Grundlast (average base load, excluding NULLs)
+        AVG(CASE WHEN NOT is_peak_load THEN leistung END) AS durchschnittliche_grundlast,
+
+        -- Durchschnittliche Spitzenlast (average peak load, excluding NULLs)
+        AVG(CASE WHEN is_peak_load THEN leistung END) AS durchschnittliche_spitzenlast,
+
+        -- Durchschnittliche Gesamtlast pro Tag (average total load, excluding NULLs)
+        AVG(leistung) AS durchschnittliche_gesamtlast_pro_tag,
+
+        -- Quote an Spitzenlasten (percentage of peak loads)
+        COUNT(CASE WHEN is_peak_load THEN 1 END) * 100.0 / COUNT(CASE WHEN leistung IS NOT NULL THEN 1 END) AS quote_spitzenlasten_prozent,
+
+        -- Quote an Rückläufigen Zählerständen (percentage of decreasing meter readings)
+        COUNT(CASE WHEN is_decreasing_zaehlerstand THEN 1 END) * 100.0 / COUNT(*) AS quote_ruecklaeufige_zaehlerstaende_prozent
+
+    FROM staging_data
+    WHERE NOT is_last_day
+    GROUP BY Kraftwerk
+),
+
+-- Last day metrics
+last_day_metrics AS (
+    SELECT
+        Kraftwerk,
+        -- Sum of Leistung for the last day (excluding NULLs)
+        SUM(leistung) AS last_day_leistung_sum,
+        -- Count of hours with valid data for the last day
+        COUNT(CASE WHEN leistung IS NOT NULL THEN 1 END) AS last_day_hours_with_data,
+        -- Average Leistung for the last day (excluding NULLs)
+        AVG(leistung) AS last_day_durchschnitt_leistung
+    FROM staging_data
+    WHERE is_last_day
+    GROUP BY Kraftwerk
+),
+
+-- Expected vs actual comparison for last day
+last_day_deviation AS (
+    SELECT
+        h.Kraftwerk,
+        h.durchschnittliche_gesamtlast_pro_tag,
+        l.last_day_leistung_sum,
+        l.last_day_hours_with_data,
+        l.last_day_durchschnitt_leistung,
+        -- Expected Leistung (summierte Leistung * 24 / überlieferte Stunden)
+        CASE
+            WHEN l.last_day_hours_with_data > 0
+            THEN (l.last_day_leistung_sum * 24.0) / l.last_day_hours_with_data
+            ELSE NULL
+        END AS erwartete_leistung,
+        -- Tagesabweichung (Expected - Actual average)
+        CASE
+            WHEN l.last_day_hours_with_data > 0
+            THEN ((l.last_day_leistung_sum * 24.0) / l.last_day_hours_with_data) - h.durchschnittliche_gesamtlast_pro_tag
+            ELSE NULL
+        END AS tagesabweichung
+    FROM historical_metrics h
+    LEFT JOIN last_day_metrics l ON h.Kraftwerk = l.Kraftwerk
+)
+
+SELECT
+    h.Kraftwerk,
+    h.durchschnittliche_grundlast,
+    h.durchschnittliche_spitzenlast,
+    h.durchschnittliche_gesamtlast_pro_tag,
+    h.quote_spitzenlasten_prozent,
+    h.quote_ruecklaeufige_zaehlerstaende_prozent,
+    l.erwartete_leistung,
+    l.tagesabweichung
+FROM historical_metrics h
+LEFT JOIN last_day_deviation l ON h.Kraftwerk = l.Kraftwerk
+    );
+  
+[0m13:04:03.241042 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m13:04:03.785039 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3c15c5e8-0a1b-48c1-97ef-8f7fbf713c6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c65c0193dc0>]}
+[0m13:04:03.789001 [info ] [Thread-1 (]: 1 of 3 OK created sql table model raw.last_day_exceptions ...................... [[32mCREATE TABLE (80.0 rows, 190.4 KiB processed)[0m in 4.59s]
+[0m13:04:03.794224 [debug] [Thread-1 (]: Finished running node model.gasag.last_day_exceptions
+[0m13:04:04.095406 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gasag-465208&j=bq:US:8f0bfc78-a944-4d2c-a902-c30a80eb2244&page=queryresults
+[0m13:04:07.303832 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3c15c5e8-0a1b-48c1-97ef-8f7fbf713c6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c65c0a7b640>]}
+[0m13:04:07.307656 [info ] [Thread-4 (]: 3 of 3 OK created sql table model raw.kraftwerke_metrics ....................... [[32mCREATE TABLE (5.0 rows, 116.6 KiB processed)[0m in 4.08s]
+[0m13:04:07.312330 [debug] [Thread-4 (]: Finished running node model.gasag.kraftwerke_metrics
+[0m13:04:07.318410 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:04:07.320848 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:04:07.322342 [debug] [MainThread]: Connection 'model.gasag.last_day_exceptions' was properly closed.
+[0m13:04:07.323428 [debug] [MainThread]: Connection 'model.gasag.stg_kraftwerksdaten' was properly closed.
+[0m13:04:07.324421 [debug] [MainThread]: Connection 'model.gasag.kraftwerke_metrics' was properly closed.
+[0m13:04:07.325625 [info ] [MainThread]: 
+[0m13:04:07.327346 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 10.22 seconds (10.22s).
+[0m13:04:07.330112 [debug] [MainThread]: Command end result
+[0m13:04:07.371571 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anton/code/gasag/dbt_gasag/target/manifest.json
+[0m13:04:07.374449 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anton/code/gasag/dbt_gasag/target/semantic_manifest.json
+[0m13:04:07.385670 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anton/code/gasag/dbt_gasag/target/run_results.json
+[0m13:04:07.386342 [info ] [MainThread]: 
+[0m13:04:07.387100 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:04:07.387820 [info ] [MainThread]: 
+[0m13:04:07.388766 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m13:04:07.390293 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 15.280234, "process_in_blocks": "0", "process_kernel_time": 0.56043, "process_mem_max_rss": "374276", "process_out_blocks": "3144", "process_user_time": 8.474393}
+[0m13:04:07.391206 [debug] [MainThread]: Command `dbt run` succeeded at 13:04:07.391054 after 15.28 seconds
+[0m13:04:07.391909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c65ecc73e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c65ecbe5c00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c65ebae9360>]}
+[0m13:04:07.393046 [debug] [MainThread]: Flushing usage events
+[0m13:04:08.058442 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:04:19.766888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7edd86b4be20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7edd859abf70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7edd859abf10>]}
+
+
+============================== 13:04:19.770352 | c0eaf576-ff1b-4bc8-a04a-6bbead98207f ==============================
+[0m13:04:19.770352 [info ] [MainThread]: Running with dbt=1.10.3
+[0m13:04:19.771161 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/anton/code/gasag/dbt_gasag/logs', 'debug': 'False', 'profiles_dir': '/home/anton/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt ls', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:04:23.171133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c0eaf576-ff1b-4bc8-a04a-6bbead98207f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7edd5bf5e920>]}
+[0m13:04:23.329356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c0eaf576-ff1b-4bc8-a04a-6bbead98207f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7edd859aa200>]}
+[0m13:04:23.330378 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m13:04:23.687575 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m13:04:23.871849 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:04:23.872691 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:04:23.945101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c0eaf576-ff1b-4bc8-a04a-6bbead98207f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7edd5b91fe50>]}
+[0m13:04:24.089788 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anton/code/gasag/dbt_gasag/target/manifest.json
+[0m13:04:24.093431 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anton/code/gasag/dbt_gasag/target/semantic_manifest.json
+[0m13:04:24.106973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c0eaf576-ff1b-4bc8-a04a-6bbead98207f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7edd5b91eec0>]}
+[0m13:04:24.108577 [info ] [MainThread]: Found 3 models, 1 source, 493 macros
+[0m13:04:24.109638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c0eaf576-ff1b-4bc8-a04a-6bbead98207f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7edd5ba4c580>]}
+[0m13:04:24.111010 [info ] [MainThread]: gasag.marts.kraftwerke_metrics
+[0m13:04:24.111646 [info ] [MainThread]: gasag.marts.last_day_exceptions
+[0m13:04:24.112264 [info ] [MainThread]: gasag.staging.stg_kraftwerksdaten
+[0m13:04:24.113068 [info ] [MainThread]: source:gasag.raw.kraftwerksdaten_raw
+[0m13:04:24.114796 [debug] [MainThread]: Resource report: {"command_name": "list", "command_success": true, "command_wall_clock_time": 4.4656096, "process_in_blocks": "0", "process_kernel_time": 0.498539, "process_mem_max_rss": "355688", "process_out_blocks": "1040", "process_user_time": 6.795727}
+[0m13:04:24.116481 [debug] [MainThread]: Command `dbt ls` succeeded at 13:04:24.116257 after 4.47 seconds
+[0m13:04:24.117153 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7edd86b4be20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7edd5bf5e920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7edd5baefbe0>]}
+[0m13:04:24.117806 [debug] [MainThread]: Flushing usage events
+[0m13:04:24.910610 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:04:37.219567 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73a8ecf87e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73a8ebdfeec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73a8ebdfef20>]}
+
+
+============================== 13:04:37.224111 | f6e3f6b1-da4c-463f-8002-3a47b4f716c5 ==============================
+[0m13:04:37.224111 [info ] [MainThread]: Running with dbt=1.10.3
+[0m13:04:37.224940 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anton/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/anton/code/gasag/dbt_gasag/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt test', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:04:40.472334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f6e3f6b1-da4c-463f-8002-3a47b4f716c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73a8c2481c90>]}
+[0m13:04:40.607911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f6e3f6b1-da4c-463f-8002-3a47b4f716c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73a8ebdfd330>]}
+[0m13:04:40.608967 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m13:04:40.918177 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m13:04:41.103082 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:04:41.103971 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:04:41.163609 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f6e3f6b1-da4c-463f-8002-3a47b4f716c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73a8c1e43f10>]}
+[0m13:04:41.288250 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anton/code/gasag/dbt_gasag/target/manifest.json
+[0m13:04:41.290711 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anton/code/gasag/dbt_gasag/target/semantic_manifest.json
+[0m13:04:41.323359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f6e3f6b1-da4c-463f-8002-3a47b4f716c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73a8c1e4fca0>]}
+[0m13:04:41.324219 [info ] [MainThread]: Found 3 models, 1 source, 493 macros
+[0m13:04:41.324976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f6e3f6b1-da4c-463f-8002-3a47b4f716c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73a8c1e40dc0>]}
+[0m13:04:41.327128 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m13:04:41.330053 [debug] [MainThread]: Command end result
+[0m13:04:41.362545 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anton/code/gasag/dbt_gasag/target/manifest.json
+[0m13:04:41.364844 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anton/code/gasag/dbt_gasag/target/semantic_manifest.json
+[0m13:04:41.371276 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anton/code/gasag/dbt_gasag/target/run_results.json
+[0m13:04:41.372800 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 4.2757635, "process_in_blocks": "0", "process_kernel_time": 0.495981, "process_mem_max_rss": "360772", "process_out_blocks": "2040", "process_user_time": 6.654337}
+[0m13:04:41.373861 [debug] [MainThread]: Command `dbt test` succeeded at 13:04:41.373667 after 4.28 seconds
+[0m13:04:41.374646 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73a8ecf87e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73a8c2481c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73a8ecefe620>]}
+[0m13:04:41.375469 [debug] [MainThread]: Flushing usage events
+[0m13:04:41.980876 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:04:52.400883 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e32a6c8bee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e32a5b02ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e32a5b02f20>]}
+
+
+============================== 13:04:52.404500 | fb3aa1f8-10dd-46af-a745-7662f3cb35c1 ==============================
+[0m13:04:52.404500 [info ] [MainThread]: Running with dbt=1.10.3
+[0m13:04:52.405341 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anton/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/anton/code/gasag/dbt_gasag/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt docs generate', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:04:55.872324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fb3aa1f8-10dd-46af-a745-7662f3cb35c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e327c0c0880>]}
+[0m13:04:56.011844 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fb3aa1f8-10dd-46af-a745-7662f3cb35c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e32a651af80>]}
+[0m13:04:56.012946 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m13:04:56.331828 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m13:04:56.521466 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:04:56.522143 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:04:56.587087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fb3aa1f8-10dd-46af-a745-7662f3cb35c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e327ba4ff70>]}
+[0m13:04:56.604176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fb3aa1f8-10dd-46af-a745-7662f3cb35c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e327bbc6a40>]}
+[0m13:04:56.605005 [info ] [MainThread]: Found 3 models, 1 source, 493 macros
+[0m13:04:56.605689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fb3aa1f8-10dd-46af-a745-7662f3cb35c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e32a65331f0>]}
+[0m13:04:56.607863 [info ] [MainThread]: 
+[0m13:04:56.608565 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:04:56.609183 [info ] [MainThread]: 
+[0m13:04:56.610921 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:04:56.619003 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_gasag-465208_raw'
+[0m13:04:56.619876 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:04:58.261631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fb3aa1f8-10dd-46af-a745-7662f3cb35c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e32a8791720>]}
+[0m13:04:58.264164 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:04:58.275766 [debug] [Thread-1 (]: Began running node model.gasag.last_day_exceptions
+[0m13:04:58.278845 [debug] [Thread-2 (]: Began running node model.gasag.stg_kraftwerksdaten
+[0m13:04:58.282230 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_gasag-465208_raw, now model.gasag.last_day_exceptions)
+[0m13:04:58.286005 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.gasag.stg_kraftwerksdaten'
+[0m13:04:58.288355 [debug] [Thread-1 (]: Began compiling node model.gasag.last_day_exceptions
+[0m13:04:58.290636 [debug] [Thread-2 (]: Began compiling node model.gasag.stg_kraftwerksdaten
+[0m13:04:58.334341 [debug] [Thread-1 (]: Writing injected SQL for node "model.gasag.last_day_exceptions"
+[0m13:04:58.335478 [debug] [Thread-2 (]: Writing injected SQL for node "model.gasag.stg_kraftwerksdaten"
+[0m13:04:58.336783 [debug] [Thread-1 (]: Began executing node model.gasag.last_day_exceptions
+[0m13:04:58.337555 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:04:58.338950 [debug] [Thread-1 (]: Finished running node model.gasag.last_day_exceptions
+[0m13:04:58.339667 [debug] [Thread-2 (]: Began executing node model.gasag.stg_kraftwerksdaten
+[0m13:04:58.340608 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:04:58.341965 [debug] [Thread-2 (]: Finished running node model.gasag.stg_kraftwerksdaten
+[0m13:04:58.343590 [debug] [Thread-4 (]: Began running node model.gasag.kraftwerke_metrics
+[0m13:04:58.345116 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.gasag.kraftwerke_metrics'
+[0m13:04:58.346519 [debug] [Thread-4 (]: Began compiling node model.gasag.kraftwerke_metrics
+[0m13:04:58.352362 [debug] [Thread-4 (]: Writing injected SQL for node "model.gasag.kraftwerke_metrics"
+[0m13:04:58.353328 [debug] [Thread-4 (]: Began executing node model.gasag.kraftwerke_metrics
+[0m13:04:58.354018 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m13:04:58.355326 [debug] [Thread-4 (]: Finished running node model.gasag.kraftwerke_metrics
+[0m13:04:58.356876 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:04:58.357466 [debug] [MainThread]: Connection 'model.gasag.last_day_exceptions' was properly closed.
+[0m13:04:58.358055 [debug] [MainThread]: Connection 'model.gasag.stg_kraftwerksdaten' was properly closed.
+[0m13:04:58.358632 [debug] [MainThread]: Connection 'model.gasag.kraftwerke_metrics' was properly closed.
+[0m13:04:58.360749 [debug] [MainThread]: Command end result
+[0m13:04:58.498344 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anton/code/gasag/dbt_gasag/target/manifest.json
+[0m13:04:58.500664 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anton/code/gasag/dbt_gasag/target/semantic_manifest.json
+[0m13:04:58.511304 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anton/code/gasag/dbt_gasag/target/run_results.json
+[0m13:04:58.514362 [debug] [MainThread]: Acquiring new bigquery connection 'generate_catalog'
+[0m13:04:58.515113 [info ] [MainThread]: Building catalog
+[0m13:04:58.522733 [debug] [ThreadPool]: Acquiring new bigquery connection 'gasag-465208.information_schema'
+[0m13:04:58.555345 [debug] [ThreadPool]: On gasag-465208.information_schema: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "gasag", "target_name": "dev", "connection_name": "gasag-465208.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `gasag-465208`.`raw`.__TABLES__ tables
+    left join `gasag-465208`.`raw`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `gasag-465208`.`raw`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('last_day_exceptions')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('kraftwerke_metrics')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('kraftwerksdaten_raw')
+                            ) or (
+                                upper(table_schema) = upper('raw')
+                            and upper(table_name) = upper('stg_kraftwerksdaten')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `gasag-465208`.`raw`.INFORMATION_SCHEMA.COLUMNS columns
+    join `gasag-465208`.`raw`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m13:04:58.557468 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:04:59.232496 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gasag-465208&j=bq:US:6e91b686-7c51-4cfc-925e-c08e6fbaf9c0&page=queryresults
+[0m13:05:01.744158 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:05:01.770309 [debug] [MainThread]: Wrote artifact CatalogArtifact to /home/anton/code/gasag/dbt_gasag/target/catalog.json
+[0m13:05:01.813056 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anton/code/gasag/dbt_gasag/target/manifest.json
+[0m13:05:01.816047 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anton/code/gasag/dbt_gasag/target/semantic_manifest.json
+[0m13:05:01.816943 [info ] [MainThread]: Catalog written to /home/anton/code/gasag/dbt_gasag/target/catalog.json
+[0m13:05:01.818297 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 9.5441475, "process_in_blocks": "0", "process_kernel_time": 0.554434, "process_mem_max_rss": "364336", "process_out_blocks": "5472", "process_user_time": 7.575624}
+[0m13:05:01.819301 [debug] [MainThread]: Command `dbt docs generate` succeeded at 13:05:01.819154 after 9.55 seconds
+[0m13:05:01.819937 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m13:05:01.820508 [debug] [MainThread]: Connection 'gasag-465208.information_schema' was properly closed.
+[0m13:05:01.821140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e32a6c8bee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e327c0c0880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e327bbc5480>]}
+[0m13:05:01.821842 [debug] [MainThread]: Flushing usage events
+[0m13:05:02.406025 [debug] [MainThread]: An error was encountered while trying to flush usage events

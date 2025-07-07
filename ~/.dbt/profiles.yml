@@ -1,0 +1,24 @@
+learndbt:
+  outputs:
+    dev:
+      account: te74160.europe-west3.gcp
+      database: ECOMMERCE
+      password: 8JLG9fGXdmiuMgU
+      role: ACCOUNTADMIN
+      schema: PUBLIC
+      threads: 4
+      type: snowflake
+      user: schwericke
+      warehouse: ECOMMERCE
+  target: dev
+
+gasag:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: gasag-465208
+      dataset: raw
+      location: EU
+      threads: 4

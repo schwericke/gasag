@@ -1,0 +1,10 @@
+gasag:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: gasag-465208
+      dataset: raw
+      location: US
+      threads: 4

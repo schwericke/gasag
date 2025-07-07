@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: gasag-465208
+    schema: raw
+    tables:
+      - name: kraftwerksdaten_raw
+        description: "Raw kraftwerksdaten from CSV"
