@@ -1,0 +1,10 @@
+# Credentials and secrets
+*.json
+!dbt_project.yml
+
+# Environment variables
+.env
+
+# dbt
+target/
+dbt_packages/
