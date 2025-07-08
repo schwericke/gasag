@@ -5,6 +5,6 @@ gasag:
       type: bigquery
       method: oauth
       project: gasag-465208
-      dataset: raw
+      dataset: analysis
       location: US
       threads: 4

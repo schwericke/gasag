@@ -2,7 +2,7 @@
   
     
 
-    create or replace table `gasag-465208`.`raw`.`last_day_exceptions`
+    create or replace table `gasag-465208`.`analysis`.`last_day_exceptions`
       
     
     

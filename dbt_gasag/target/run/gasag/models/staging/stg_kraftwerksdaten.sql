@@ -2,7 +2,7 @@
   
     
 
-    create or replace table `gasag-465208`.`raw`.`stg_kraftwerksdaten`
+    create or replace table `gasag-465208`.`analysis`.`stg_kraftwerksdaten`
       
     
     
@@ -52,6 +52,7 @@ cleaned_data AS (
 SELECT
     Kraftwerk,
     Timestamp,
+    EXTRACT(HOUR FROM Timestamp) AS hour_of_day,
     Zaehlerstand,
     is_decreasing_zaehlerstand,
     is_last_day,
@@ -60,8 +61,13 @@ SELECT
     CASE
         WHEN leistung IS NOT NULL AND leistung > 50 THEN TRUE
         ELSE FALSE
-    END AS is_peak_load
+    END AS is_peak_load,
+    -- Flag for forecast data (will be populated by ARIMA model)
+    FALSE AS is_forecast,
+    -- Prognose will be populated by ARIMA model
+    NULL AS prognose
 FROM cleaned_data
 WHERE Timestamp > TIMESTAMP('2024-01-01 00:00:00')
+ORDER BY Kraftwerk, Timestamp
     );
   
