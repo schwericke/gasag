@@ -3,7 +3,8 @@ gasag:
   outputs:
     dev:
       type: bigquery
-      method: oauth
+      method: service-account
+      keyfile: ../gcp/bigquery_credentials.json
       project: gasag-465208
       dataset: analysis
       location: US
